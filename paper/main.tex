@@ -1,0 +1,105 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,microtype}
+\usepackage[hidelinks]{hyperref}
+\usepackage[margin=1in]{geometry}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newcommand{\C}{\mathbb C}
+\newcommand{\ee}{\mathrm e}
+\newcommand{\ii}{\mathrm i}
+\newcommand{\dd}{\,\mathrm d}
+\title{The nearest complex zeros of ordered set-partition polynomials with a large-block marker}
+\author{Bowen Zuo\\\small East China University of Science and Technology}
+\date{27 November 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+For a fixed integer $j\ge4$, let $O_{n,j}(t)$ count ordered partitions of a labelled $n$-element set by their number of blocks of size at least $j$. We identify the limiting distances of its complex zero set from $0$ and $1$. Both distances are determined by a unique positive critical point of the exponential generating function. Near their common real boundary point, the normalized polynomials converge locally uniformly to $\sin(\sqrt u)/\sqrt u$ in a parameter window of width $n^{-2}$. An explicit zero-free disk gives a one-sided finite-size error of order $(\log n)/n$. The argument applies to the full complex zero set.
+\end{abstract}
+
+\section{The two radii}
+Write $\mathcal Z_n$ for the zeros of $O_{n,j}$ in $\C$, and fix $j\ge4$ throughout. Each ordered partition is a sequence of nonempty sets. Giving weight $t$ to every set of size at least $j$ yields
+\begin{equation}\label{egf}
+ \sum_{n\ge0}O_{n,j}(t)\frac{z^n}{n!}
+ =\frac1{D(z,1-t)},\qquad
+ D(z,s)=2-\ee^z+s B(z),\qquad B(z)=\sum_{r\ge j}\frac{z^r}{r!}.
+\end{equation}
+The order is on the blocks, and the elements within a block form a set. The real-rootedness question for this family appears in Alexandersson's problem list \cite{symcat}. The largest-modulus roots in the ordered family have a different scale \cite{outer}. Fang studies a related unordered model \cite{fang}. Here we determine how close the zeros of \eqref{egf} get to the origin and to the unmarked point $t=1$.
+
+Put $\rho=\log 2$ and $f(x)=(\ee^x-2)/B(x)$ for $x>0$. Denote by $a$ the unique maximizer of $f$, and set
+\[
+ C=f(a),\qquad d=D_{zz}(a,C),\qquad L=\frac{a^2d}{2B(a)}.
+\]
+We verify below that $\rho<a<1$, $C>1$, and $d=2(j-1)/a$. Define the entire function $S(u)=\sum_{m\ge0}(-u)^m/(2m+1)!$.
+
+\begin{theorem}\label{thm}
+The following convergence is locally uniform for $u\in\C$:
+\[
+ \frac{a^n a^2d}{2n}\,\frac{O_{n,j}(1-C-Lu/n^2)}{n!}
+ \ \longrightarrow\ S(u).
+\]
+The two distances satisfy
+\[
+ \lim_{n\to\infty}\min_{t\in\mathcal Z_n}|1-t|=C,\qquad
+ \lim_{n\to\infty}\min_{t\in\mathcal Z_n}|t|=C-1 .
+\]
+For $n\ge3$, every $t\in\mathcal Z_n$ satisfies
+\[
+ |1-t|>C-H\frac{\log n}{n},\qquad
+ |t|>C-1-H\frac{\log n}{n},\qquad H=\frac{2a(1+C)\ee^a}{B(a)} .
+\]
+\end{theorem}
+
+\section{The critical point and its circle}
+The derivative of $f$ has the sign of
+\[
+ G(x)=\frac{2(j-1)!\,B(x)}{x^{j-1}}-(\ee^x-2).
+\]
+Its constant coefficient is $1$ and its coefficient of $x^m/m!$ is $2/\binom{j-1+m}{m}-1<0$ for $m\ge1$. Thus $G$ is strictly decreasing for $x>0$. We have $G(\rho)>0$ and $G(1)\le 11\ee-30<0$ by comparison with $j=4$. This proves the asserted uniqueness and location of $a$. Also $f(1)>1$ since $\sum_{r<j}1/r!>2$. At $a$, $G(a)=0$ gives $C=2(j-1)!/a^{j-1}$ and $D_z(a,C)=0$. Subtracting $D_z$ from $D_{zz}$ gives $d=C a^{j-2}/(j-2)!$.
+
+\begin{lemma}\label{circle}
+If $\rho\le x\le1$ and $|z|=x$, then $|2-\ee^z|\ge\ee^x-2$, strictly unless $z=x$.
+\end{lemma}
+\begin{proof}
+Write $z=p+\ii v$. For $p\le0$ use $|2-\ee^z|\ge1>\ee^x-2$. For $0<p<x$ put $\delta=x-p$, so $v^2=\delta(x+p)$. The difference of the squared quantities is
+\[
+ 4\ee^p(1-\cos v)-(\ee^x-\ee^p)(\ee^x+\ee^p-4).
+\]
+Dividing by $\ee^p\delta$, its first term is at least $11(x+p)/6$ by the alternating cosine series on $[-1,1]$. A nonpositive second term suffices. Otherwise, when $p\le x/2$, its size after division is at most $(\ee-1)(\ee+\sqrt{\ee}-4)<0.64$, by monotonicity of $(\ee^\delta-1)/\delta$. When $p\ge x/2$ the bound is $2(\sqrt{\ee}-1)(2\ee-4)<1.88$. The first term exceeds $11\rho/6>1.26$ and, in the second case, $11\rho/4>1.89$. These comparisons follow for instance from $2.718<\ee<2.719$, $\sqrt{\ee}<1.649$ and $\rho>0.693$. At $p=x$ equality follows by substitution.
+\end{proof}
+
+\section{An effective zero-free disk}
+Fix $0\le T<C$ and $|s|\le T$. On $|z|=a$, Lemma~\ref{circle} and $|B(z)|\le B(a)$ give $|D(z,s)|\ge b=(C-T)B(a)>0$. Rouch\'e's theorem compares $D$ with $2-\ee^z$, whose only zero in this disk is $\rho$. Let $p$ be the unique zero of $D$ there, counted with multiplicity. It is simple and nonzero. On the closed disk, $|D_z|\le M=(1+T)\ee^a$. The segment from $p$ to $ap/|p|$ shows that $a-|p|\ge b/M$. Thus $0<y=b/(aM)<1$ and $|p|/a\le1-y$.
+
+Moving the Cauchy contour for $[z^n]D(z,s)^{-1}$ to $|z|=a$ yields $-p^{-n-1}/D_z(p,s)$ plus an error of magnitude at most $a^{-n}/b$ \cite[Chap.~IV]{fs}. The error divided by the magnitude of the displayed residue is at most $(1-y)^n/y$. Consequently the whole closed disk $|1-t|\le T$ is zero-free whenever $(1-y)^n<y$. Now put $T=C-H(\log n)/n$. A negative $T$ gives the claimed strict inequality immediately. Otherwise $y\ge2(\log n)/n$ and $(1-y)^n\le n^{-2}<y$ for $n\ge3$. The reverse triangle inequality proves the second finite-size bound.
+
+\section{Transfer at the double pole}
+For real $0<s<C$ the positive solution $p(s)$ with $\rho<p(s)<a$ is unique by strict monotonicity of $f$ on $(\rho,a)$ and tends to $a$ as $s\uparrow C$. There is no zero of $D(\cdot,C)$ strictly inside $|z|=a$. Any such zero would persist in a small interior disk by Rouch\'e's theorem, whereas the unique interior zero at nearby $s<C$ approaches $a$. On the boundary, Lemma~\ref{circle} gives strict separation except at $a$. The zero at $a$ is exactly double since $d>0$. Choose $R>a$ for which this remains the only zero in $|z|\le R$ at $s=C$. On $|z|=R$ the reciprocal is uniformly bounded for $s$ near $C$.
+
+For $|u|\le K$ choose $M>\sqrt K$ and substitute $s=C+Lu/n^2$ and $z=a(1+v/n)$. Uniformly on $|v|=M$,
+\[
+ n^2D(z,s)=\tfrac12a^2d(v^2+u)+O_K(n^{-1}).
+\]
+The right-hand quadratic is bounded away from zero on the contour. Rouch\'e's theorem counts two enclosed zeros including multiplicities, exactly as on the outer circle by perturbation of $s=C$. For large $n$ the small circle avoids the origin. The coefficient is therefore the integral on $|z|=R$ minus the integral on the small positively oriented circle, both with measure $z^{-n-1}\dd z/(2\pi\ii)$. After normalization the outer contribution is $O_K((a/R)^n/n)$. On the small circle $(1+v/n)^{-n-1}\to\ee^{-v}$ uniformly, giving the limit
+\[
+ -\frac1{2\pi\ii}\int_{|v|=M}\frac{\ee^{-v}}{v^2+u}\dd v
+ =\sum_{m\ge0}\frac{(-u)^m}{(2m+1)!}=S(u).
+\]
+Expansion of $(v^2+u)^{-1}$ on the circle justifies the equality, including $u=0$.
+
+For real $w>0$, $S(w^2)=\sin(w)/w$. The values at $w=\pi/2$ and $w=3\pi/2$ have opposite signs. The normalized original rows have these signs eventually, hence a real zero $t=1-C-Lu/n^2$ with $\pi^2/4<u<9\pi^2/4$. This supplies the two upper limits and completes Theorem~\ref{thm}. In particular, for these distances the upper deviations are $O_j(n^{-2})$ even though the zero-free argument gives a larger lower error.
+
+\paragraph{Formal verification and reproducibility.}
+The accompanying Lean~4 and Mathlib project defines the original ordered row and both distances to its complex zero set. Its declarations \texttt{original\_inner\_sinc\_limit}, \texttt{root\_distance\_log\_bound} and \texttt{original\_inner\_radii} give the three claims of Theorem~\ref{thm}. The source archive includes the dependency lock and independent kernel replay instructions.
+
+\paragraph{Acknowledgement.}
+ChatGPT assisted with mathematical derivations, independent checks, formalization and drafting.
+
+\begin{thebibliography}{9}
+\bibitem{symcat} P.~Alexandersson, \emph{Real-rooted polynomials: open problems}, SymCat, \url{https://www.symmetricfunctions.com/realRootedOpenProblems.htm}, accessed 27 November 2026.
+\bibitem{fang} C.~Fang, \emph{Eventual interlacing of large-block set-partition polynomials}, preprint, 2026, \url{https://hexagonmath.org/2611.01129v1}.
+\bibitem{fs} P.~Flajolet and R.~Sedgewick, \emph{Analytic Combinatorics}, Cambridge University Press, 2009.
+\bibitem{outer} B.~Zuo, \emph{Extreme zeros of ordered set-partition polynomials at a fixed block-size threshold}, 2026, \url{https://doi.org/10.5281/zenodo.24572343}.
+\end{thebibliography}
+\end{document}

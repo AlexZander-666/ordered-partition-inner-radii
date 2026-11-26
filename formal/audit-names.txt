@@ -1,0 +1,6 @@
+OrderedPartitions.CriticalEdge.original_inner_radii
+OrderedPartitions.CriticalEdge.original_inner_sinc_limit
+OrderedPartitions.CriticalEdge.eventual_real_witness
+OrderedPartitions.CriticalEdge.root_distance_log_bound
+OrderedPartitions.CriticalEdge.two_pole_contour_geometry
+OrderedPartitions.CriticalEdge.limiting_contour_eq_sinc

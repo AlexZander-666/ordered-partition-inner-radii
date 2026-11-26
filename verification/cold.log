@@ -1,0 +1,1398 @@
+source_zip_sha256 25c04c59bcceee683fcc2e527730cbfb1bc905507c13eb56be4e69d03790fb47
+PASS lexical proof scan and exact source manifest on 32 modules
+locked-dependency mathlib 0df444a360eaa60ab8c11dca51a86af692955474
+locked-dependency plausible b7eb3304aeae834b12dda98993a37f6a41f6f0bb
+locked-dependency LeanSearchClient 5f4d51b81cbd3f6b32b156bfad9056621a040404
+locked-dependency importGraph 16f02aa7642864af59f1ff0e384a015994db9118
+locked-dependency proofwidgets 4be2e3d5087eeb272cf5a8853b8f9dd025ef5957
+locked-dependency aesop 3448c0bcc5ce01b2d1546e483ec3620e32df3d0e
+locked-dependency Qq 92c15be17b7caf78c2ad767ec40f89052d908d81
+locked-dependency batteries 4488d40d070b9700d4d5a6aa342f0d40c31b2a2d
+locked-dependency Cli 6130a47896ce867c6a4a55373441e59e565bad0f
+Lean (version 4.33.1, aarch64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+Linux aarch64 Initial project objects: 0
+building 1-3 of 32 OrderedPartitions.FiniteSimplePoles OrderedPartitions.CriticalEdgeOneResidue OrderedPartitions.CriticalEdgeContours
+ℹ [2718/2725] Built OrderedPartitions.FiniteSimplePoles (1.0s)
+info: OrderedPartitions/FiniteSimplePoles.lean:75:0: 'OrderedPartitions.FiniteSimplePoles.remove' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2719/2725] Built OrderedPartitions.CriticalEdgeOneResidue (2.2s)
+info: OrderedPartitions/CriticalEdgeOneResidue.lean:174:0: 'OrderedPartitions.CriticalEdge.coefficient_one_pole' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOneResidue.lean:175:0: 'OrderedPartitions.CriticalEdge.norm_circleRemainder_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2725/2725] Built OrderedPartitions.CriticalEdgeContours (2.8s)
+info: OrderedPartitions/CriticalEdgeContours.lean:212:0: 'OrderedPartitions.CriticalEdge.coefficient_eq_sub_displaced' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (2725 jobs).
+building 4-6 of 32 OrderedPartitions.FirstJump OrderedPartitions.FirstJumpRows OrderedPartitions.LastBlock
+ℹ [3006/3008] Built OrderedPartitions.FirstJump (2.3s)
+info: OrderedPartitions/FirstJump.lean:159:0: 'OrderedPartitions.count_above_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:160:0: 'OrderedPartitions.count_zero_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:161:0: 'OrderedPartitions.count_one_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:162:0: 'OrderedPartitions.capacity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:163:0: 'OrderedPartitions.first_jump_two_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:164:0: 'OrderedPartitions.firstJumpEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:165:0: 'OrderedPartitions.first_jump_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3007/3008] Built OrderedPartitions.FirstJumpRows (2.1s)
+info: OrderedPartitions/FirstJumpRows.lean:50:0: 'OrderedPartitions.coeff_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJumpRows.lean:51:0: 'OrderedPartitions.row_linear' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJumpRows.lean:52:0: 'OrderedPartitions.row_first_jump' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3008/3008] Built OrderedPartitions.LastBlock (2.2s)
+info: OrderedPartitions/LastBlock.lean:155:0: 'OrderedPartitions.large_append_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlock.lean:156:0: 'OrderedPartitions.lastBlockEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlock.lean:157:0: 'OrderedPartitions.blockRow_last' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (3008 jobs).
+building 7-9 of 32 OrderedPartitions.LastBlockRow OrderedPartitions.MarkedSeries OrderedPartitions.OriginalEGF
+ℹ [3005/3011] Replayed OrderedPartitions.FirstJump
+info: OrderedPartitions/FirstJump.lean:159:0: 'OrderedPartitions.count_above_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:160:0: 'OrderedPartitions.count_zero_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:161:0: 'OrderedPartitions.count_one_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:162:0: 'OrderedPartitions.capacity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:163:0: 'OrderedPartitions.first_jump_two_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:164:0: 'OrderedPartitions.firstJumpEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:165:0: 'OrderedPartitions.first_jump_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3006/3011] Replayed OrderedPartitions.FirstJumpRows
+info: OrderedPartitions/FirstJumpRows.lean:50:0: 'OrderedPartitions.coeff_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJumpRows.lean:51:0: 'OrderedPartitions.row_linear' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJumpRows.lean:52:0: 'OrderedPartitions.row_first_jump' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3007/3011] Replayed OrderedPartitions.LastBlock
+info: OrderedPartitions/LastBlock.lean:155:0: 'OrderedPartitions.large_append_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlock.lean:156:0: 'OrderedPartitions.lastBlockEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlock.lean:157:0: 'OrderedPartitions.blockRow_last' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3009/3013] Built OrderedPartitions.LastBlockRow (2.2s)
+info: OrderedPartitions/LastBlockRow.lean:104:0: 'OrderedPartitions.count_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlockRow.lean:105:0: 'OrderedPartitions.coeff_blockRow' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlockRow.lean:106:0: 'OrderedPartitions.row_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlockRow.lean:107:0: 'OrderedPartitions.row_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3011/3048] Built OrderedPartitions.MarkedSeries (2.5s)
+info: OrderedPartitions/MarkedSeries.lean:140:0: 'OrderedPartitions.row_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:141:0: 'OrderedPartitions.markedCount_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:142:0: 'OrderedPartitions.markedCount_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:143:0: 'OrderedPartitions.markedCount_eq_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:144:0: 'OrderedPartitions.markedCount_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:145:0: 'OrderedPartitions.free_resolvent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:146:0: 'OrderedPartitions.marked_segments' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3048/3048] Built OrderedPartitions.OriginalEGF (2.2s)
+info: OrderedPartitions/OriginalEGF.lean:91:0: 'OrderedPartitions.moment_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/OriginalEGF.lean:92:0: 'OrderedPartitions.original_egf' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (3048 jobs).
+building 10-12 of 32 OrderedPartitions.CriticalEdgeOriginal OrderedPartitions.CriticalEdgeCircle OrderedPartitions.CriticalEdgeActivity
+ℹ [3005/3044] Replayed OrderedPartitions.FirstJump
+info: OrderedPartitions/FirstJump.lean:159:0: 'OrderedPartitions.count_above_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:160:0: 'OrderedPartitions.count_zero_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:161:0: 'OrderedPartitions.count_one_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:162:0: 'OrderedPartitions.capacity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:163:0: 'OrderedPartitions.first_jump_two_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:164:0: 'OrderedPartitions.firstJumpEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:165:0: 'OrderedPartitions.first_jump_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3006/3044] Replayed OrderedPartitions.FirstJumpRows
+info: OrderedPartitions/FirstJumpRows.lean:50:0: 'OrderedPartitions.coeff_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJumpRows.lean:51:0: 'OrderedPartitions.row_linear' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJumpRows.lean:52:0: 'OrderedPartitions.row_first_jump' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3007/3044] Replayed OrderedPartitions.LastBlock
+info: OrderedPartitions/LastBlock.lean:155:0: 'OrderedPartitions.large_append_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlock.lean:156:0: 'OrderedPartitions.lastBlockEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlock.lean:157:0: 'OrderedPartitions.blockRow_last' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3008/3044] Replayed OrderedPartitions.LastBlockRow
+info: OrderedPartitions/LastBlockRow.lean:104:0: 'OrderedPartitions.count_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlockRow.lean:105:0: 'OrderedPartitions.coeff_blockRow' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlockRow.lean:106:0: 'OrderedPartitions.row_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlockRow.lean:107:0: 'OrderedPartitions.row_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3010/3044] Replayed OrderedPartitions.MarkedSeries
+info: OrderedPartitions/MarkedSeries.lean:140:0: 'OrderedPartitions.row_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:141:0: 'OrderedPartitions.markedCount_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:142:0: 'OrderedPartitions.markedCount_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:143:0: 'OrderedPartitions.markedCount_eq_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:144:0: 'OrderedPartitions.markedCount_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:145:0: 'OrderedPartitions.free_resolvent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:146:0: 'OrderedPartitions.marked_segments' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3047/3145] Replayed OrderedPartitions.OriginalEGF
+info: OrderedPartitions/OriginalEGF.lean:91:0: 'OrderedPartitions.moment_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/OriginalEGF.lean:92:0: 'OrderedPartitions.original_egf' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3144/3160] Built OrderedPartitions.CriticalEdgeOriginal (2.5s)
+info: OrderedPartitions/CriticalEdgeOriginal.lean:158:0: 'OrderedPartitions.CriticalEdge.complex_row_resolvent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOriginal.lean:159:0: 'OrderedPartitions.CriticalEdge.inverse_den_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOriginal.lean:160:0: 'OrderedPartitions.CriticalEdge.inverse_den_series' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3159/3160] Built OrderedPartitions.CriticalEdgeCircle (2.8s)
+info: OrderedPartitions/CriticalEdgeCircle.lean:268:0: 'OrderedPartitions.CriticalEdgeCircle.norm_sub_exp_circle_strict' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:269:0: 'OrderedPartitions.CriticalEdgeCircle.norm_sub_exp_circle' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:270:0: 'OrderedPartitions.CriticalEdgeCircle.tailComplex_ofReal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:271:0: 'OrderedPartitions.CriticalEdgeCircle.norm_tailComplex_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:272:0: 'OrderedPartitions.CriticalEdgeCircle.boundary_dominance' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:273:0: 'OrderedPartitions.CriticalEdgeCircle.denominator_ne_zero_on_circle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:274:0: 'OrderedPartitions.CriticalEdgeCircle.norm_denominator_lower_on_circle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:275:0: 'OrderedPartitions.CriticalEdgeCircle.denominator_zero_on_circle_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3160/3160] Built OrderedPartitions.CriticalEdgeActivity (2.1s)
+info: OrderedPartitions/CriticalEdgeActivity.lean:34:0: 'OrderedPartitions.CriticalEdge.poleDen_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (3160 jobs).
+building 13-15 of 32 OrderedPartitions.CriticalEdgeScalar OrderedPartitions.CriticalEdgeScaling OrderedPartitions.CriticalEdgeDisk
+ℹ [2203/2399] Built OrderedPartitions.CriticalEdgeScalar (2.7s)
+info: OrderedPartitions/CriticalEdgeScalar.lean:65:0: 'OrderedPartitions.CriticalEdge.criticalTest_deriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:66:0: 'OrderedPartitions.CriticalEdge.criticalTest_strictAnti' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:114:0: 'OrderedPartitions.CriticalEdge.unique_critical' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:115:0: 'OrderedPartitions.CriticalEdge.ratio_deriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:163:0: 'OrderedPartitions.CriticalEdge.strict_maximum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:198:0: 'OrderedPartitions.CriticalEdge.critical_contact' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:218:0: 'OrderedPartitions.CriticalEdge.critical_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:219:0: 'OrderedPartitions.CriticalEdge.critical_curvature' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3113/3165] Replayed OrderedPartitions.FirstJump
+info: OrderedPartitions/FirstJump.lean:159:0: 'OrderedPartitions.count_above_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:160:0: 'OrderedPartitions.count_zero_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:161:0: 'OrderedPartitions.count_one_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:162:0: 'OrderedPartitions.capacity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:163:0: 'OrderedPartitions.first_jump_two_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:164:0: 'OrderedPartitions.firstJumpEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:165:0: 'OrderedPartitions.first_jump_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3114/3165] Replayed OrderedPartitions.FirstJumpRows
+info: OrderedPartitions/FirstJumpRows.lean:50:0: 'OrderedPartitions.coeff_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJumpRows.lean:51:0: 'OrderedPartitions.row_linear' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJumpRows.lean:52:0: 'OrderedPartitions.row_first_jump' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3115/3165] Replayed OrderedPartitions.LastBlock
+info: OrderedPartitions/LastBlock.lean:155:0: 'OrderedPartitions.large_append_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlock.lean:156:0: 'OrderedPartitions.lastBlockEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlock.lean:157:0: 'OrderedPartitions.blockRow_last' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3116/3165] Replayed OrderedPartitions.LastBlockRow
+info: OrderedPartitions/LastBlockRow.lean:104:0: 'OrderedPartitions.count_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlockRow.lean:105:0: 'OrderedPartitions.coeff_blockRow' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlockRow.lean:106:0: 'OrderedPartitions.row_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlockRow.lean:107:0: 'OrderedPartitions.row_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3118/3165] Replayed OrderedPartitions.MarkedSeries
+info: OrderedPartitions/MarkedSeries.lean:140:0: 'OrderedPartitions.row_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:141:0: 'OrderedPartitions.markedCount_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:142:0: 'OrderedPartitions.markedCount_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:143:0: 'OrderedPartitions.markedCount_eq_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:144:0: 'OrderedPartitions.markedCount_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:145:0: 'OrderedPartitions.free_resolvent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:146:0: 'OrderedPartitions.marked_segments' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3155/3165] Replayed OrderedPartitions.OriginalEGF
+info: OrderedPartitions/OriginalEGF.lean:91:0: 'OrderedPartitions.moment_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/OriginalEGF.lean:92:0: 'OrderedPartitions.original_egf' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3156/3165] Replayed OrderedPartitions.CriticalEdgeOriginal
+info: OrderedPartitions/CriticalEdgeOriginal.lean:158:0: 'OrderedPartitions.CriticalEdge.complex_row_resolvent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOriginal.lean:159:0: 'OrderedPartitions.CriticalEdge.inverse_den_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOriginal.lean:160:0: 'OrderedPartitions.CriticalEdge.inverse_den_series' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3159/3165] Replayed OrderedPartitions.CriticalEdgeCircle
+info: OrderedPartitions/CriticalEdgeCircle.lean:268:0: 'OrderedPartitions.CriticalEdgeCircle.norm_sub_exp_circle_strict' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:269:0: 'OrderedPartitions.CriticalEdgeCircle.norm_sub_exp_circle' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:270:0: 'OrderedPartitions.CriticalEdgeCircle.tailComplex_ofReal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:271:0: 'OrderedPartitions.CriticalEdgeCircle.norm_tailComplex_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:272:0: 'OrderedPartitions.CriticalEdgeCircle.boundary_dominance' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:273:0: 'OrderedPartitions.CriticalEdgeCircle.denominator_ne_zero_on_circle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:274:0: 'OrderedPartitions.CriticalEdgeCircle.norm_denominator_lower_on_circle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:275:0: 'OrderedPartitions.CriticalEdgeCircle.denominator_zero_on_circle_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3160/3165] Replayed OrderedPartitions.CriticalEdgeActivity
+info: OrderedPartitions/CriticalEdgeActivity.lean:34:0: 'OrderedPartitions.CriticalEdge.poleDen_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3163/3224] Built OrderedPartitions.CriticalEdgeScaling (2.3s)
+info: OrderedPartitions/CriticalEdgeScaling.lean:158:0: 'OrderedPartitions.CriticalEdge.quadratic_scaling_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScaling.lean:159:0: 'OrderedPartitions.CriticalEdge.rescaled_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScaling.lean:160:0: 'OrderedPartitions.CriticalEdge.rescaled_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScaling.lean:161:0: 'OrderedPartitions.CriticalEdge.rescaled_analytic' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScaling.lean:162:0: 'OrderedPartitions.CriticalEdge.cden_contact' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3438/3438] Built OrderedPartitions.CriticalEdgeDisk (2.8s)
+info: OrderedPartitions/CriticalEdgeDisk.lean:318:0: 'OrderedPartitions.CriticalEdgeDisk.one_simple_zero_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeDisk.lean:319:0: 'OrderedPartitions.CriticalEdgeDisk.one_simple_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (3438 jobs).
+building 16-18 of 32 OrderedPartitions.CriticalEdgeOnePole OrderedPartitions.CriticalEdgeScaledContours OrderedPartitions.CriticalEdgeKernelLimit
+ℹ [2205/2298] Replayed OrderedPartitions.CriticalEdgeCircle
+info: OrderedPartitions/CriticalEdgeCircle.lean:268:0: 'OrderedPartitions.CriticalEdgeCircle.norm_sub_exp_circle_strict' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:269:0: 'OrderedPartitions.CriticalEdgeCircle.norm_sub_exp_circle' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:270:0: 'OrderedPartitions.CriticalEdgeCircle.tailComplex_ofReal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:271:0: 'OrderedPartitions.CriticalEdgeCircle.norm_tailComplex_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:272:0: 'OrderedPartitions.CriticalEdgeCircle.boundary_dominance' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:273:0: 'OrderedPartitions.CriticalEdgeCircle.denominator_ne_zero_on_circle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:274:0: 'OrderedPartitions.CriticalEdgeCircle.norm_denominator_lower_on_circle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:275:0: 'OrderedPartitions.CriticalEdgeCircle.denominator_zero_on_circle_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2729/2743] Replayed OrderedPartitions.CriticalEdgeDisk
+info: OrderedPartitions/CriticalEdgeDisk.lean:318:0: 'OrderedPartitions.CriticalEdgeDisk.one_simple_zero_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeDisk.lean:319:0: 'OrderedPartitions.CriticalEdgeDisk.one_simple_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2740/2777] Built OrderedPartitions.CriticalEdgeOnePole (2.3s)
+info: OrderedPartitions/CriticalEdgeOnePole.lean:143:0: 'OrderedPartitions.CriticalEdgeCircle.denominator_differentiable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeOnePole.lean:144:0: 'OrderedPartitions.CriticalEdgeCircle.denominator_at_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOnePole.lean:145:0: 'OrderedPartitions.CriticalEdgeCircle.denominator_ofReal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOnePole.lean:146:0: 'OrderedPartitions.CriticalEdgeCircle.denominator_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOnePole.lean:147:0: 'OrderedPartitions.CriticalEdgeCircle.subcritical_one_simple_pole' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeOnePole.lean:148:0: 'OrderedPartitions.CriticalEdgeCircle.subcritical_one_real_pole' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeOnePole.lean:149:0: 'OrderedPartitions.CriticalEdgeCircle.subcritical_one_positive_pole' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2741/2777] Replayed OrderedPartitions.FiniteSimplePoles
+info: OrderedPartitions/FiniteSimplePoles.lean:75:0: 'OrderedPartitions.FiniteSimplePoles.remove' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2742/2777] Replayed OrderedPartitions.CriticalEdgeOneResidue
+info: OrderedPartitions/CriticalEdgeOneResidue.lean:174:0: 'OrderedPartitions.CriticalEdge.coefficient_one_pole' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOneResidue.lean:175:0: 'OrderedPartitions.CriticalEdge.norm_circleRemainder_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2748/2777] Replayed OrderedPartitions.CriticalEdgeContours
+info: OrderedPartitions/CriticalEdgeContours.lean:212:0: 'OrderedPartitions.CriticalEdge.coefficient_eq_sub_displaced' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3410/3418] Replayed OrderedPartitions.FirstJump
+info: OrderedPartitions/FirstJump.lean:159:0: 'OrderedPartitions.count_above_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:160:0: 'OrderedPartitions.count_zero_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:161:0: 'OrderedPartitions.count_one_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:162:0: 'OrderedPartitions.capacity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:163:0: 'OrderedPartitions.first_jump_two_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:164:0: 'OrderedPartitions.firstJumpEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:165:0: 'OrderedPartitions.first_jump_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3411/3418] Replayed OrderedPartitions.FirstJumpRows
+info: OrderedPartitions/FirstJumpRows.lean:50:0: 'OrderedPartitions.coeff_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJumpRows.lean:51:0: 'OrderedPartitions.row_linear' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJumpRows.lean:52:0: 'OrderedPartitions.row_first_jump' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3412/3418] Replayed OrderedPartitions.LastBlock
+info: OrderedPartitions/LastBlock.lean:155:0: 'OrderedPartitions.large_append_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlock.lean:156:0: 'OrderedPartitions.lastBlockEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlock.lean:157:0: 'OrderedPartitions.blockRow_last' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3413/3418] Replayed OrderedPartitions.LastBlockRow
+info: OrderedPartitions/LastBlockRow.lean:104:0: 'OrderedPartitions.count_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlockRow.lean:105:0: 'OrderedPartitions.coeff_blockRow' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlockRow.lean:106:0: 'OrderedPartitions.row_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlockRow.lean:107:0: 'OrderedPartitions.row_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3418/3462] Replayed OrderedPartitions.MarkedSeries
+info: OrderedPartitions/MarkedSeries.lean:140:0: 'OrderedPartitions.row_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:141:0: 'OrderedPartitions.markedCount_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:142:0: 'OrderedPartitions.markedCount_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:143:0: 'OrderedPartitions.markedCount_eq_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:144:0: 'OrderedPartitions.markedCount_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:145:0: 'OrderedPartitions.free_resolvent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:146:0: 'OrderedPartitions.marked_segments' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3453/3462] Replayed OrderedPartitions.OriginalEGF
+info: OrderedPartitions/OriginalEGF.lean:91:0: 'OrderedPartitions.moment_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/OriginalEGF.lean:92:0: 'OrderedPartitions.original_egf' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3454/3462] Replayed OrderedPartitions.CriticalEdgeOriginal
+info: OrderedPartitions/CriticalEdgeOriginal.lean:158:0: 'OrderedPartitions.CriticalEdge.complex_row_resolvent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOriginal.lean:159:0: 'OrderedPartitions.CriticalEdge.inverse_den_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOriginal.lean:160:0: 'OrderedPartitions.CriticalEdge.inverse_den_series' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3455/3462] Replayed OrderedPartitions.CriticalEdgeActivity
+info: OrderedPartitions/CriticalEdgeActivity.lean:34:0: 'OrderedPartitions.CriticalEdge.poleDen_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3456/3462] Replayed OrderedPartitions.CriticalEdgeScalar
+info: OrderedPartitions/CriticalEdgeScalar.lean:65:0: 'OrderedPartitions.CriticalEdge.criticalTest_deriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:66:0: 'OrderedPartitions.CriticalEdge.criticalTest_strictAnti' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:114:0: 'OrderedPartitions.CriticalEdge.unique_critical' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:115:0: 'OrderedPartitions.CriticalEdge.ratio_deriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:163:0: 'OrderedPartitions.CriticalEdge.strict_maximum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:198:0: 'OrderedPartitions.CriticalEdge.critical_contact' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:218:0: 'OrderedPartitions.CriticalEdge.critical_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:219:0: 'OrderedPartitions.CriticalEdge.critical_curvature' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3457/3462] Replayed OrderedPartitions.CriticalEdgeScaling
+info: OrderedPartitions/CriticalEdgeScaling.lean:158:0: 'OrderedPartitions.CriticalEdge.quadratic_scaling_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScaling.lean:159:0: 'OrderedPartitions.CriticalEdge.rescaled_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScaling.lean:160:0: 'OrderedPartitions.CriticalEdge.rescaled_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScaling.lean:161:0: 'OrderedPartitions.CriticalEdge.rescaled_analytic' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScaling.lean:162:0: 'OrderedPartitions.CriticalEdge.cden_contact' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3461/3462] Built OrderedPartitions.CriticalEdgeScaledContours (2.6s)
+info: OrderedPartitions/CriticalEdgeScaledContours.lean:109:0: 'OrderedPartitions.CriticalEdge.circleIntegral_affine' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScaledContours.lean:110:0: 'OrderedPartitions.CriticalEdge.scaled_displaced_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScaledContours.lean:111:0: 'OrderedPartitions.CriticalEdge.normalizedRow_eq_contours' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3462/3462] Built OrderedPartitions.CriticalEdgeKernelLimit (2.3s)
+info: OrderedPartitions/CriticalEdgeKernelLimit.lean:209:0: 'OrderedPartitions.CriticalEdge.secondQuotient_differentiable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeKernelLimit.lean:210:0: 'OrderedPartitions.CriticalEdge.rescaledDen_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeKernelLimit.lean:211:0: 'OrderedPartitions.CriticalEdge.compact_parameter_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeKernelLimit.lean:212:0: 'OrderedPartitions.CriticalEdge.scaledKernel_tendsto_uniformly' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeKernelLimit.lean:213:0: 'OrderedPartitions.CriticalEdge.scaledKernel_eventually_continuousOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeKernelLimit.lean:214:0: 'OrderedPartitions.CriticalEdge.scaledCircle_tendsto_uniformly' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Build completed successfully (3462 jobs).
+building 19-21 of 32 OrderedPartitions.CriticalEdgeOuterDecay OrderedPartitions.CriticalEdgeSquareCoordinate OrderedPartitions.ThreePoleDiskExistence
+ℹ [2717/2725] Replayed OrderedPartitions.FiniteSimplePoles
+info: OrderedPartitions/FiniteSimplePoles.lean:75:0: 'OrderedPartitions.FiniteSimplePoles.remove' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2718/2725] Replayed OrderedPartitions.CriticalEdgeOneResidue
+info: OrderedPartitions/CriticalEdgeOneResidue.lean:174:0: 'OrderedPartitions.CriticalEdge.coefficient_one_pole' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOneResidue.lean:175:0: 'OrderedPartitions.CriticalEdge.norm_circleRemainder_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2724/2947] Replayed OrderedPartitions.CriticalEdgeContours
+info: OrderedPartitions/CriticalEdgeContours.lean:212:0: 'OrderedPartitions.CriticalEdge.coefficient_eq_sub_displaced' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3390/3398] Replayed OrderedPartitions.FirstJump
+info: OrderedPartitions/FirstJump.lean:159:0: 'OrderedPartitions.count_above_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:160:0: 'OrderedPartitions.count_zero_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:161:0: 'OrderedPartitions.count_one_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:162:0: 'OrderedPartitions.capacity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:163:0: 'OrderedPartitions.first_jump_two_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:164:0: 'OrderedPartitions.firstJumpEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:165:0: 'OrderedPartitions.first_jump_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3391/3398] Replayed OrderedPartitions.FirstJumpRows
+info: OrderedPartitions/FirstJumpRows.lean:50:0: 'OrderedPartitions.coeff_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJumpRows.lean:51:0: 'OrderedPartitions.row_linear' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJumpRows.lean:52:0: 'OrderedPartitions.row_first_jump' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3392/3398] Replayed OrderedPartitions.LastBlock
+info: OrderedPartitions/LastBlock.lean:155:0: 'OrderedPartitions.large_append_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlock.lean:156:0: 'OrderedPartitions.lastBlockEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlock.lean:157:0: 'OrderedPartitions.blockRow_last' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3393/3398] Replayed OrderedPartitions.LastBlockRow
+info: OrderedPartitions/LastBlockRow.lean:104:0: 'OrderedPartitions.count_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlockRow.lean:105:0: 'OrderedPartitions.coeff_blockRow' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlockRow.lean:106:0: 'OrderedPartitions.row_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlockRow.lean:107:0: 'OrderedPartitions.row_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3398/3465] Replayed OrderedPartitions.MarkedSeries
+info: OrderedPartitions/MarkedSeries.lean:140:0: 'OrderedPartitions.row_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:141:0: 'OrderedPartitions.markedCount_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:142:0: 'OrderedPartitions.markedCount_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:143:0: 'OrderedPartitions.markedCount_eq_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:144:0: 'OrderedPartitions.markedCount_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:145:0: 'OrderedPartitions.free_resolvent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:146:0: 'OrderedPartitions.marked_segments' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3433/3465] Replayed OrderedPartitions.OriginalEGF
+info: OrderedPartitions/OriginalEGF.lean:91:0: 'OrderedPartitions.moment_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/OriginalEGF.lean:92:0: 'OrderedPartitions.original_egf' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3434/3465] Replayed OrderedPartitions.CriticalEdgeOriginal
+info: OrderedPartitions/CriticalEdgeOriginal.lean:158:0: 'OrderedPartitions.CriticalEdge.complex_row_resolvent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOriginal.lean:159:0: 'OrderedPartitions.CriticalEdge.inverse_den_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOriginal.lean:160:0: 'OrderedPartitions.CriticalEdge.inverse_den_series' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3436/3465] Replayed OrderedPartitions.CriticalEdgeCircle
+info: OrderedPartitions/CriticalEdgeCircle.lean:268:0: 'OrderedPartitions.CriticalEdgeCircle.norm_sub_exp_circle_strict' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:269:0: 'OrderedPartitions.CriticalEdgeCircle.norm_sub_exp_circle' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:270:0: 'OrderedPartitions.CriticalEdgeCircle.tailComplex_ofReal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:271:0: 'OrderedPartitions.CriticalEdgeCircle.norm_tailComplex_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:272:0: 'OrderedPartitions.CriticalEdgeCircle.boundary_dominance' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:273:0: 'OrderedPartitions.CriticalEdgeCircle.denominator_ne_zero_on_circle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:274:0: 'OrderedPartitions.CriticalEdgeCircle.norm_denominator_lower_on_circle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:275:0: 'OrderedPartitions.CriticalEdgeCircle.denominator_zero_on_circle_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3437/3465] Replayed OrderedPartitions.CriticalEdgeActivity
+info: OrderedPartitions/CriticalEdgeActivity.lean:34:0: 'OrderedPartitions.CriticalEdge.poleDen_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3438/3465] Replayed OrderedPartitions.CriticalEdgeScalar
+info: OrderedPartitions/CriticalEdgeScalar.lean:65:0: 'OrderedPartitions.CriticalEdge.criticalTest_deriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:66:0: 'OrderedPartitions.CriticalEdge.criticalTest_strictAnti' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:114:0: 'OrderedPartitions.CriticalEdge.unique_critical' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:115:0: 'OrderedPartitions.CriticalEdge.ratio_deriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:163:0: 'OrderedPartitions.CriticalEdge.strict_maximum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:198:0: 'OrderedPartitions.CriticalEdge.critical_contact' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:218:0: 'OrderedPartitions.CriticalEdge.critical_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:219:0: 'OrderedPartitions.CriticalEdge.critical_curvature' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3439/3465] Replayed OrderedPartitions.CriticalEdgeScaling
+info: OrderedPartitions/CriticalEdgeScaling.lean:158:0: 'OrderedPartitions.CriticalEdge.quadratic_scaling_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScaling.lean:159:0: 'OrderedPartitions.CriticalEdge.rescaled_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScaling.lean:160:0: 'OrderedPartitions.CriticalEdge.rescaled_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScaling.lean:161:0: 'OrderedPartitions.CriticalEdge.rescaled_analytic' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScaling.lean:162:0: 'OrderedPartitions.CriticalEdge.cden_contact' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3446/3465] Replayed OrderedPartitions.CriticalEdgeDisk
+info: OrderedPartitions/CriticalEdgeDisk.lean:318:0: 'OrderedPartitions.CriticalEdgeDisk.one_simple_zero_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeDisk.lean:319:0: 'OrderedPartitions.CriticalEdgeDisk.one_simple_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3457/3465] Replayed OrderedPartitions.CriticalEdgeOnePole
+info: OrderedPartitions/CriticalEdgeOnePole.lean:143:0: 'OrderedPartitions.CriticalEdgeCircle.denominator_differentiable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeOnePole.lean:144:0: 'OrderedPartitions.CriticalEdgeCircle.denominator_at_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOnePole.lean:145:0: 'OrderedPartitions.CriticalEdgeCircle.denominator_ofReal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOnePole.lean:146:0: 'OrderedPartitions.CriticalEdgeCircle.denominator_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOnePole.lean:147:0: 'OrderedPartitions.CriticalEdgeCircle.subcritical_one_simple_pole' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeOnePole.lean:148:0: 'OrderedPartitions.CriticalEdgeCircle.subcritical_one_real_pole' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeOnePole.lean:149:0: 'OrderedPartitions.CriticalEdgeCircle.subcritical_one_positive_pole' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3460/3465] Replayed OrderedPartitions.CriticalEdgeScaledContours
+info: OrderedPartitions/CriticalEdgeScaledContours.lean:109:0: 'OrderedPartitions.CriticalEdge.circleIntegral_affine' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScaledContours.lean:110:0: 'OrderedPartitions.CriticalEdge.scaled_displaced_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScaledContours.lean:111:0: 'OrderedPartitions.CriticalEdge.normalizedRow_eq_contours' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3462/3465] Built OrderedPartitions.ThreePoleDiskExistence (1.0s)
+info: OrderedPartitions/ThreePoleDiskExistence.lean:48:0: 'OrderedPartitions.ThreePole.exists_zero_of_boundary_dominance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3463/3465] Replayed OrderedPartitions.CriticalEdgeKernelLimit
+info: OrderedPartitions/CriticalEdgeKernelLimit.lean:209:0: 'OrderedPartitions.CriticalEdge.secondQuotient_differentiable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeKernelLimit.lean:210:0: 'OrderedPartitions.CriticalEdge.rescaledDen_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeKernelLimit.lean:211:0: 'OrderedPartitions.CriticalEdge.compact_parameter_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeKernelLimit.lean:212:0: 'OrderedPartitions.CriticalEdge.scaledKernel_tendsto_uniformly' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeKernelLimit.lean:213:0: 'OrderedPartitions.CriticalEdge.scaledKernel_eventually_continuousOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeKernelLimit.lean:214:0: 'OrderedPartitions.CriticalEdge.scaledCircle_tendsto_uniformly' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3464/3465] Built OrderedPartitions.CriticalEdgeSquareCoordinate (2.6s)
+info: OrderedPartitions/CriticalEdgeSquareCoordinate.lean:125:0: 'OrderedPartitions.CriticalEdge.poleCoordinate_factor_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeSquareCoordinate.lean:126:0: 'OrderedPartitions.CriticalEdge.poleCoordinate_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeSquareCoordinate.lean:127:0: 'OrderedPartitions.CriticalEdge.inverse_poleCoordinate' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3465/3465] Built OrderedPartitions.CriticalEdgeOuterDecay (2.4s)
+info: OrderedPartitions/CriticalEdgeOuterDecay.lean:78:0: 'OrderedPartitions.CriticalEdge.outer_contour_eventual_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOuterDecay.lean:79:0: 'OrderedPartitions.CriticalEdge.outer_contour_tendsto_uniformly' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Build completed successfully (3465 jobs).
+building 22-24 of 32 OrderedPartitions.CriticalEdgePoleEndpoint OrderedPartitions.CriticalEdgeTwoPoles OrderedPartitions.CriticalEdgeMovingPoles
+ℹ [2205/2358] Replayed OrderedPartitions.CriticalEdgeCircle
+info: OrderedPartitions/CriticalEdgeCircle.lean:268:0: 'OrderedPartitions.CriticalEdgeCircle.norm_sub_exp_circle_strict' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:269:0: 'OrderedPartitions.CriticalEdgeCircle.norm_sub_exp_circle' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:270:0: 'OrderedPartitions.CriticalEdgeCircle.tailComplex_ofReal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:271:0: 'OrderedPartitions.CriticalEdgeCircle.norm_tailComplex_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:272:0: 'OrderedPartitions.CriticalEdgeCircle.boundary_dominance' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:273:0: 'OrderedPartitions.CriticalEdgeCircle.denominator_ne_zero_on_circle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:274:0: 'OrderedPartitions.CriticalEdgeCircle.norm_denominator_lower_on_circle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:275:0: 'OrderedPartitions.CriticalEdgeCircle.denominator_zero_on_circle_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2729/2744] Replayed OrderedPartitions.CriticalEdgeDisk
+info: OrderedPartitions/CriticalEdgeDisk.lean:318:0: 'OrderedPartitions.CriticalEdgeDisk.one_simple_zero_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeDisk.lean:319:0: 'OrderedPartitions.CriticalEdgeDisk.one_simple_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2740/2744] Replayed OrderedPartitions.CriticalEdgeOnePole
+info: OrderedPartitions/CriticalEdgeOnePole.lean:143:0: 'OrderedPartitions.CriticalEdgeCircle.denominator_differentiable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeOnePole.lean:144:0: 'OrderedPartitions.CriticalEdgeCircle.denominator_at_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOnePole.lean:145:0: 'OrderedPartitions.CriticalEdgeCircle.denominator_ofReal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOnePole.lean:146:0: 'OrderedPartitions.CriticalEdgeCircle.denominator_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOnePole.lean:147:0: 'OrderedPartitions.CriticalEdgeCircle.subcritical_one_simple_pole' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeOnePole.lean:148:0: 'OrderedPartitions.CriticalEdgeCircle.subcritical_one_real_pole' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeOnePole.lean:149:0: 'OrderedPartitions.CriticalEdgeCircle.subcritical_one_positive_pole' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2741/2744] Replayed OrderedPartitions.CriticalEdgeScalar
+info: OrderedPartitions/CriticalEdgeScalar.lean:65:0: 'OrderedPartitions.CriticalEdge.criticalTest_deriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:66:0: 'OrderedPartitions.CriticalEdge.criticalTest_strictAnti' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:114:0: 'OrderedPartitions.CriticalEdge.unique_critical' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:115:0: 'OrderedPartitions.CriticalEdge.ratio_deriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:163:0: 'OrderedPartitions.CriticalEdge.strict_maximum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:198:0: 'OrderedPartitions.CriticalEdge.critical_contact' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:218:0: 'OrderedPartitions.CriticalEdge.critical_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:219:0: 'OrderedPartitions.CriticalEdge.critical_curvature' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2742/2744] Replayed OrderedPartitions.ThreePoleDiskExistence
+info: OrderedPartitions/ThreePoleDiskExistence.lean:48:0: 'OrderedPartitions.ThreePole.exists_zero_of_boundary_dominance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2743/2912] Built OrderedPartitions.CriticalEdgePoleEndpoint (2.6s)
+info: OrderedPartitions/CriticalEdgePoleEndpoint.lean:248:0: 'OrderedPartitions.CriticalEdge.near_critical_axis_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgePoleEndpoint.lean:249:0: 'OrderedPartitions.CriticalEdge.positive_pole_tendsto_critical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgePoleEndpoint.lean:250:0: 'OrderedPartitions.CriticalEdge.critical_denominator_ne_zero_inside' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgePoleEndpoint.lean:251:0: 'OrderedPartitions.CriticalEdge.critical_denominator_closed_disk' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgePoleEndpoint.lean:252:0: 'OrderedPartitions.CriticalEdge.exists_positive_pole_branch' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgePoleEndpoint.lean:253:0: 'OrderedPartitions.CriticalEdge.exists_critical_closed_disk' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3406/3466] Replayed OrderedPartitions.FirstJump
+info: OrderedPartitions/FirstJump.lean:159:0: 'OrderedPartitions.count_above_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:160:0: 'OrderedPartitions.count_zero_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:161:0: 'OrderedPartitions.count_one_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:162:0: 'OrderedPartitions.capacity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:163:0: 'OrderedPartitions.first_jump_two_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:164:0: 'OrderedPartitions.firstJumpEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:165:0: 'OrderedPartitions.first_jump_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3407/3466] Replayed OrderedPartitions.FirstJumpRows
+info: OrderedPartitions/FirstJumpRows.lean:50:0: 'OrderedPartitions.coeff_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJumpRows.lean:51:0: 'OrderedPartitions.row_linear' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJumpRows.lean:52:0: 'OrderedPartitions.row_first_jump' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3408/3466] Replayed OrderedPartitions.LastBlock
+info: OrderedPartitions/LastBlock.lean:155:0: 'OrderedPartitions.large_append_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlock.lean:156:0: 'OrderedPartitions.lastBlockEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlock.lean:157:0: 'OrderedPartitions.blockRow_last' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3409/3466] Replayed OrderedPartitions.LastBlockRow
+info: OrderedPartitions/LastBlockRow.lean:104:0: 'OrderedPartitions.count_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlockRow.lean:105:0: 'OrderedPartitions.coeff_blockRow' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlockRow.lean:106:0: 'OrderedPartitions.row_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlockRow.lean:107:0: 'OrderedPartitions.row_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3411/3466] Replayed OrderedPartitions.MarkedSeries
+info: OrderedPartitions/MarkedSeries.lean:140:0: 'OrderedPartitions.row_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:141:0: 'OrderedPartitions.markedCount_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:142:0: 'OrderedPartitions.markedCount_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:143:0: 'OrderedPartitions.markedCount_eq_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:144:0: 'OrderedPartitions.markedCount_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:145:0: 'OrderedPartitions.free_resolvent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:146:0: 'OrderedPartitions.marked_segments' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3448/3466] Replayed OrderedPartitions.OriginalEGF
+info: OrderedPartitions/OriginalEGF.lean:91:0: 'OrderedPartitions.moment_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/OriginalEGF.lean:92:0: 'OrderedPartitions.original_egf' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3449/3466] Replayed OrderedPartitions.CriticalEdgeOriginal
+info: OrderedPartitions/CriticalEdgeOriginal.lean:158:0: 'OrderedPartitions.CriticalEdge.complex_row_resolvent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOriginal.lean:159:0: 'OrderedPartitions.CriticalEdge.inverse_den_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOriginal.lean:160:0: 'OrderedPartitions.CriticalEdge.inverse_den_series' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3450/3466] Replayed OrderedPartitions.CriticalEdgeActivity
+info: OrderedPartitions/CriticalEdgeActivity.lean:34:0: 'OrderedPartitions.CriticalEdge.poleDen_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3451/3466] Replayed OrderedPartitions.CriticalEdgeScaling
+info: OrderedPartitions/CriticalEdgeScaling.lean:158:0: 'OrderedPartitions.CriticalEdge.quadratic_scaling_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScaling.lean:159:0: 'OrderedPartitions.CriticalEdge.rescaled_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScaling.lean:160:0: 'OrderedPartitions.CriticalEdge.rescaled_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScaling.lean:161:0: 'OrderedPartitions.CriticalEdge.rescaled_analytic' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScaling.lean:162:0: 'OrderedPartitions.CriticalEdge.cden_contact' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3460/3466] Replayed OrderedPartitions.CriticalEdgeSquareCoordinate
+info: OrderedPartitions/CriticalEdgeSquareCoordinate.lean:125:0: 'OrderedPartitions.CriticalEdge.poleCoordinate_factor_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeSquareCoordinate.lean:126:0: 'OrderedPartitions.CriticalEdge.poleCoordinate_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeSquareCoordinate.lean:127:0: 'OrderedPartitions.CriticalEdge.inverse_poleCoordinate' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3465/3466] Built OrderedPartitions.CriticalEdgeTwoPoles (2.4s)
+info: OrderedPartitions/CriticalEdgeTwoPoles.lean:144:0: 'OrderedPartitions.CriticalEdge.actual_two_poles' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeTwoPoles.lean:145:0: 'OrderedPartitions.CriticalEdge.enlarge_disk' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeTwoPoles.lean:146:0: 'OrderedPartitions.CriticalEdge.split_zero_simple' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3466/3466] Built OrderedPartitions.CriticalEdgeMovingPoles (3.9s)
+info: OrderedPartitions/CriticalEdgeMovingPoles.lean:117:0: 'OrderedPartitions.CriticalEdge.two_pole_contour_geometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (3466 jobs).
+building 25-27 of 32 OrderedPartitions.CriticalEdgeSinc OrderedPartitions.CriticalEdgeSincZeros OrderedPartitions.CriticalEdgeInnerLimit
+ℹ [2716/2725] Built OrderedPartitions.CriticalEdgeSinc (2.2s)
+info: OrderedPartitions/CriticalEdgeSinc.lean:95:0: 'OrderedPartitions.CriticalEdge.innerSinc_of_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeSinc.lean:96:0: 'OrderedPartitions.CriticalEdge.limiting_contour_eq_sinc' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2890/3084] Built OrderedPartitions.CriticalEdgeSincZeros (2.2s)
+info: OrderedPartitions/CriticalEdgeSincZeros.lean:85:0: 'OrderedPartitions.CriticalEdge.innerSinc_analytic_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeSincZeros.lean:86:0: 'OrderedPartitions.CriticalEdge.innerSinc_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeSincZeros.lean:87:0: 'OrderedPartitions.CriticalEdge.innerSinc_zeros' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeSincZeros.lean:88:0: 'OrderedPartitions.CriticalEdge.innerSinc_simple' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2893/3084] Replayed OrderedPartitions.FiniteSimplePoles
+info: OrderedPartitions/FiniteSimplePoles.lean:75:0: 'OrderedPartitions.FiniteSimplePoles.remove' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2894/3084] Replayed OrderedPartitions.CriticalEdgeOneResidue
+info: OrderedPartitions/CriticalEdgeOneResidue.lean:174:0: 'OrderedPartitions.CriticalEdge.coefficient_one_pole' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOneResidue.lean:175:0: 'OrderedPartitions.CriticalEdge.norm_circleRemainder_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2896/3084] Replayed OrderedPartitions.CriticalEdgeContours
+info: OrderedPartitions/CriticalEdgeContours.lean:212:0: 'OrderedPartitions.CriticalEdge.coefficient_eq_sub_displaced' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3401/3471] Replayed OrderedPartitions.FirstJump
+info: OrderedPartitions/FirstJump.lean:159:0: 'OrderedPartitions.count_above_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:160:0: 'OrderedPartitions.count_zero_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:161:0: 'OrderedPartitions.count_one_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:162:0: 'OrderedPartitions.capacity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:163:0: 'OrderedPartitions.first_jump_two_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:164:0: 'OrderedPartitions.firstJumpEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:165:0: 'OrderedPartitions.first_jump_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3402/3471] Replayed OrderedPartitions.FirstJumpRows
+info: OrderedPartitions/FirstJumpRows.lean:50:0: 'OrderedPartitions.coeff_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJumpRows.lean:51:0: 'OrderedPartitions.row_linear' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJumpRows.lean:52:0: 'OrderedPartitions.row_first_jump' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3403/3471] Replayed OrderedPartitions.LastBlock
+info: OrderedPartitions/LastBlock.lean:155:0: 'OrderedPartitions.large_append_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlock.lean:156:0: 'OrderedPartitions.lastBlockEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlock.lean:157:0: 'OrderedPartitions.blockRow_last' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3404/3471] Replayed OrderedPartitions.LastBlockRow
+info: OrderedPartitions/LastBlockRow.lean:104:0: 'OrderedPartitions.count_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlockRow.lean:105:0: 'OrderedPartitions.coeff_blockRow' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlockRow.lean:106:0: 'OrderedPartitions.row_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlockRow.lean:107:0: 'OrderedPartitions.row_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3406/3471] Replayed OrderedPartitions.MarkedSeries
+info: OrderedPartitions/MarkedSeries.lean:140:0: 'OrderedPartitions.row_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:141:0: 'OrderedPartitions.markedCount_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:142:0: 'OrderedPartitions.markedCount_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:143:0: 'OrderedPartitions.markedCount_eq_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:144:0: 'OrderedPartitions.markedCount_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:145:0: 'OrderedPartitions.free_resolvent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:146:0: 'OrderedPartitions.marked_segments' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3443/3471] Replayed OrderedPartitions.OriginalEGF
+info: OrderedPartitions/OriginalEGF.lean:91:0: 'OrderedPartitions.moment_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/OriginalEGF.lean:92:0: 'OrderedPartitions.original_egf' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3444/3471] Replayed OrderedPartitions.CriticalEdgeOriginal
+info: OrderedPartitions/CriticalEdgeOriginal.lean:158:0: 'OrderedPartitions.CriticalEdge.complex_row_resolvent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOriginal.lean:159:0: 'OrderedPartitions.CriticalEdge.inverse_den_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOriginal.lean:160:0: 'OrderedPartitions.CriticalEdge.inverse_den_series' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3446/3471] Replayed OrderedPartitions.CriticalEdgeCircle
+info: OrderedPartitions/CriticalEdgeCircle.lean:268:0: 'OrderedPartitions.CriticalEdgeCircle.norm_sub_exp_circle_strict' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:269:0: 'OrderedPartitions.CriticalEdgeCircle.norm_sub_exp_circle' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:270:0: 'OrderedPartitions.CriticalEdgeCircle.tailComplex_ofReal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:271:0: 'OrderedPartitions.CriticalEdgeCircle.norm_tailComplex_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:272:0: 'OrderedPartitions.CriticalEdgeCircle.boundary_dominance' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:273:0: 'OrderedPartitions.CriticalEdgeCircle.denominator_ne_zero_on_circle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:274:0: 'OrderedPartitions.CriticalEdgeCircle.norm_denominator_lower_on_circle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:275:0: 'OrderedPartitions.CriticalEdgeCircle.denominator_zero_on_circle_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3447/3471] Replayed OrderedPartitions.CriticalEdgeActivity
+info: OrderedPartitions/CriticalEdgeActivity.lean:34:0: 'OrderedPartitions.CriticalEdge.poleDen_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3448/3471] Replayed OrderedPartitions.CriticalEdgeScalar
+info: OrderedPartitions/CriticalEdgeScalar.lean:65:0: 'OrderedPartitions.CriticalEdge.criticalTest_deriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:66:0: 'OrderedPartitions.CriticalEdge.criticalTest_strictAnti' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:114:0: 'OrderedPartitions.CriticalEdge.unique_critical' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:115:0: 'OrderedPartitions.CriticalEdge.ratio_deriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:163:0: 'OrderedPartitions.CriticalEdge.strict_maximum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:198:0: 'OrderedPartitions.CriticalEdge.critical_contact' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:218:0: 'OrderedPartitions.CriticalEdge.critical_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:219:0: 'OrderedPartitions.CriticalEdge.critical_curvature' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3449/3471] Replayed OrderedPartitions.CriticalEdgeScaling
+info: OrderedPartitions/CriticalEdgeScaling.lean:158:0: 'OrderedPartitions.CriticalEdge.quadratic_scaling_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScaling.lean:159:0: 'OrderedPartitions.CriticalEdge.rescaled_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScaling.lean:160:0: 'OrderedPartitions.CriticalEdge.rescaled_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScaling.lean:161:0: 'OrderedPartitions.CriticalEdge.rescaled_analytic' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScaling.lean:162:0: 'OrderedPartitions.CriticalEdge.cden_contact' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3454/3471] Replayed OrderedPartitions.CriticalEdgeDisk
+info: OrderedPartitions/CriticalEdgeDisk.lean:318:0: 'OrderedPartitions.CriticalEdgeDisk.one_simple_zero_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeDisk.lean:319:0: 'OrderedPartitions.CriticalEdgeDisk.one_simple_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3463/3471] Replayed OrderedPartitions.CriticalEdgeOnePole
+info: OrderedPartitions/CriticalEdgeOnePole.lean:143:0: 'OrderedPartitions.CriticalEdgeCircle.denominator_differentiable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeOnePole.lean:144:0: 'OrderedPartitions.CriticalEdgeCircle.denominator_at_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOnePole.lean:145:0: 'OrderedPartitions.CriticalEdgeCircle.denominator_ofReal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOnePole.lean:146:0: 'OrderedPartitions.CriticalEdgeCircle.denominator_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOnePole.lean:147:0: 'OrderedPartitions.CriticalEdgeCircle.subcritical_one_simple_pole' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeOnePole.lean:148:0: 'OrderedPartitions.CriticalEdgeCircle.subcritical_one_real_pole' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeOnePole.lean:149:0: 'OrderedPartitions.CriticalEdgeCircle.subcritical_one_positive_pole' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3464/3471] Replayed OrderedPartitions.CriticalEdgeScaledContours
+info: OrderedPartitions/CriticalEdgeScaledContours.lean:109:0: 'OrderedPartitions.CriticalEdge.circleIntegral_affine' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScaledContours.lean:110:0: 'OrderedPartitions.CriticalEdge.scaled_displaced_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScaledContours.lean:111:0: 'OrderedPartitions.CriticalEdge.normalizedRow_eq_contours' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3468/3471] Replayed OrderedPartitions.CriticalEdgeSquareCoordinate
+info: OrderedPartitions/CriticalEdgeSquareCoordinate.lean:125:0: 'OrderedPartitions.CriticalEdge.poleCoordinate_factor_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeSquareCoordinate.lean:126:0: 'OrderedPartitions.CriticalEdge.poleCoordinate_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeSquareCoordinate.lean:127:0: 'OrderedPartitions.CriticalEdge.inverse_poleCoordinate' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3470/3476] Replayed OrderedPartitions.CriticalEdgeKernelLimit
+info: OrderedPartitions/CriticalEdgeKernelLimit.lean:209:0: 'OrderedPartitions.CriticalEdge.secondQuotient_differentiable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeKernelLimit.lean:210:0: 'OrderedPartitions.CriticalEdge.rescaledDen_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeKernelLimit.lean:211:0: 'OrderedPartitions.CriticalEdge.compact_parameter_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeKernelLimit.lean:212:0: 'OrderedPartitions.CriticalEdge.scaledKernel_tendsto_uniformly' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeKernelLimit.lean:213:0: 'OrderedPartitions.CriticalEdge.scaledKernel_eventually_continuousOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeKernelLimit.lean:214:0: 'OrderedPartitions.CriticalEdge.scaledCircle_tendsto_uniformly' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3471/3476] Replayed OrderedPartitions.CriticalEdgeOuterDecay
+info: OrderedPartitions/CriticalEdgeOuterDecay.lean:78:0: 'OrderedPartitions.CriticalEdge.outer_contour_eventual_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOuterDecay.lean:79:0: 'OrderedPartitions.CriticalEdge.outer_contour_tendsto_uniformly' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3472/3476] Replayed OrderedPartitions.ThreePoleDiskExistence
+info: OrderedPartitions/ThreePoleDiskExistence.lean:48:0: 'OrderedPartitions.ThreePole.exists_zero_of_boundary_dominance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3473/3476] Replayed OrderedPartitions.CriticalEdgePoleEndpoint
+info: OrderedPartitions/CriticalEdgePoleEndpoint.lean:248:0: 'OrderedPartitions.CriticalEdge.near_critical_axis_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgePoleEndpoint.lean:249:0: 'OrderedPartitions.CriticalEdge.positive_pole_tendsto_critical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgePoleEndpoint.lean:250:0: 'OrderedPartitions.CriticalEdge.critical_denominator_ne_zero_inside' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgePoleEndpoint.lean:251:0: 'OrderedPartitions.CriticalEdge.critical_denominator_closed_disk' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgePoleEndpoint.lean:252:0: 'OrderedPartitions.CriticalEdge.exists_positive_pole_branch' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgePoleEndpoint.lean:253:0: 'OrderedPartitions.CriticalEdge.exists_critical_closed_disk' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3474/3476] Replayed OrderedPartitions.CriticalEdgeTwoPoles
+info: OrderedPartitions/CriticalEdgeTwoPoles.lean:144:0: 'OrderedPartitions.CriticalEdge.actual_two_poles' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeTwoPoles.lean:145:0: 'OrderedPartitions.CriticalEdge.enlarge_disk' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeTwoPoles.lean:146:0: 'OrderedPartitions.CriticalEdge.split_zero_simple' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3475/3476] Replayed OrderedPartitions.CriticalEdgeMovingPoles
+info: OrderedPartitions/CriticalEdgeMovingPoles.lean:117:0: 'OrderedPartitions.CriticalEdge.two_pole_contour_geometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3476/3476] Built OrderedPartitions.CriticalEdgeInnerLimit (2.4s)
+info: OrderedPartitions/CriticalEdgeInnerLimit.lean:102:0: 'OrderedPartitions.CriticalEdge.normalizedInnerRow_tendsto_sinc' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeInnerLimit.lean:103:0: 'OrderedPartitions.CriticalEdge.original_inner_sinc_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (3476 jobs).
+building 28-30 of 32 OrderedPartitions.CriticalEdgeRealWitness OrderedPartitions.CriticalEdgeExplicitGap OrderedPartitions.CriticalEdgeFiniteZeroFree
+ℹ [2717/2915] Replayed OrderedPartitions.FiniteSimplePoles
+info: OrderedPartitions/FiniteSimplePoles.lean:75:0: 'OrderedPartitions.FiniteSimplePoles.remove' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2718/2915] Replayed OrderedPartitions.CriticalEdgeOneResidue
+info: OrderedPartitions/CriticalEdgeOneResidue.lean:174:0: 'OrderedPartitions.CriticalEdge.coefficient_one_pole' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOneResidue.lean:175:0: 'OrderedPartitions.CriticalEdge.norm_circleRemainder_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2724/2915] Replayed OrderedPartitions.CriticalEdgeContours
+info: OrderedPartitions/CriticalEdgeContours.lean:212:0: 'OrderedPartitions.CriticalEdge.coefficient_eq_sub_displaced' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3391/3479] Replayed OrderedPartitions.FirstJump
+info: OrderedPartitions/FirstJump.lean:159:0: 'OrderedPartitions.count_above_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:160:0: 'OrderedPartitions.count_zero_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:161:0: 'OrderedPartitions.count_one_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:162:0: 'OrderedPartitions.capacity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:163:0: 'OrderedPartitions.first_jump_two_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:164:0: 'OrderedPartitions.firstJumpEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:165:0: 'OrderedPartitions.first_jump_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3392/3479] Replayed OrderedPartitions.FirstJumpRows
+info: OrderedPartitions/FirstJumpRows.lean:50:0: 'OrderedPartitions.coeff_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJumpRows.lean:51:0: 'OrderedPartitions.row_linear' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJumpRows.lean:52:0: 'OrderedPartitions.row_first_jump' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3393/3479] Replayed OrderedPartitions.LastBlock
+info: OrderedPartitions/LastBlock.lean:155:0: 'OrderedPartitions.large_append_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlock.lean:156:0: 'OrderedPartitions.lastBlockEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlock.lean:157:0: 'OrderedPartitions.blockRow_last' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3394/3479] Replayed OrderedPartitions.LastBlockRow
+info: OrderedPartitions/LastBlockRow.lean:104:0: 'OrderedPartitions.count_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlockRow.lean:105:0: 'OrderedPartitions.coeff_blockRow' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlockRow.lean:106:0: 'OrderedPartitions.row_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlockRow.lean:107:0: 'OrderedPartitions.row_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3396/3479] Replayed OrderedPartitions.MarkedSeries
+info: OrderedPartitions/MarkedSeries.lean:140:0: 'OrderedPartitions.row_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:141:0: 'OrderedPartitions.markedCount_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:142:0: 'OrderedPartitions.markedCount_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:143:0: 'OrderedPartitions.markedCount_eq_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:144:0: 'OrderedPartitions.markedCount_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:145:0: 'OrderedPartitions.free_resolvent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:146:0: 'OrderedPartitions.marked_segments' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3433/3479] Replayed OrderedPartitions.OriginalEGF
+info: OrderedPartitions/OriginalEGF.lean:91:0: 'OrderedPartitions.moment_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/OriginalEGF.lean:92:0: 'OrderedPartitions.original_egf' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3434/3479] Replayed OrderedPartitions.CriticalEdgeOriginal
+info: OrderedPartitions/CriticalEdgeOriginal.lean:158:0: 'OrderedPartitions.CriticalEdge.complex_row_resolvent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOriginal.lean:159:0: 'OrderedPartitions.CriticalEdge.inverse_den_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOriginal.lean:160:0: 'OrderedPartitions.CriticalEdge.inverse_den_series' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3436/3479] Replayed OrderedPartitions.CriticalEdgeCircle
+info: OrderedPartitions/CriticalEdgeCircle.lean:268:0: 'OrderedPartitions.CriticalEdgeCircle.norm_sub_exp_circle_strict' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:269:0: 'OrderedPartitions.CriticalEdgeCircle.norm_sub_exp_circle' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:270:0: 'OrderedPartitions.CriticalEdgeCircle.tailComplex_ofReal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:271:0: 'OrderedPartitions.CriticalEdgeCircle.norm_tailComplex_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:272:0: 'OrderedPartitions.CriticalEdgeCircle.boundary_dominance' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:273:0: 'OrderedPartitions.CriticalEdgeCircle.denominator_ne_zero_on_circle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:274:0: 'OrderedPartitions.CriticalEdgeCircle.norm_denominator_lower_on_circle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:275:0: 'OrderedPartitions.CriticalEdgeCircle.denominator_zero_on_circle_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3437/3479] Replayed OrderedPartitions.CriticalEdgeActivity
+info: OrderedPartitions/CriticalEdgeActivity.lean:34:0: 'OrderedPartitions.CriticalEdge.poleDen_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3438/3479] Replayed OrderedPartitions.CriticalEdgeScalar
+info: OrderedPartitions/CriticalEdgeScalar.lean:65:0: 'OrderedPartitions.CriticalEdge.criticalTest_deriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:66:0: 'OrderedPartitions.CriticalEdge.criticalTest_strictAnti' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:114:0: 'OrderedPartitions.CriticalEdge.unique_critical' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:115:0: 'OrderedPartitions.CriticalEdge.ratio_deriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:163:0: 'OrderedPartitions.CriticalEdge.strict_maximum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:198:0: 'OrderedPartitions.CriticalEdge.critical_contact' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:218:0: 'OrderedPartitions.CriticalEdge.critical_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:219:0: 'OrderedPartitions.CriticalEdge.critical_curvature' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3439/3479] Replayed OrderedPartitions.CriticalEdgeScaling
+info: OrderedPartitions/CriticalEdgeScaling.lean:158:0: 'OrderedPartitions.CriticalEdge.quadratic_scaling_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScaling.lean:159:0: 'OrderedPartitions.CriticalEdge.rescaled_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScaling.lean:160:0: 'OrderedPartitions.CriticalEdge.rescaled_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScaling.lean:161:0: 'OrderedPartitions.CriticalEdge.rescaled_analytic' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScaling.lean:162:0: 'OrderedPartitions.CriticalEdge.cden_contact' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3446/3479] Replayed OrderedPartitions.CriticalEdgeDisk
+info: OrderedPartitions/CriticalEdgeDisk.lean:318:0: 'OrderedPartitions.CriticalEdgeDisk.one_simple_zero_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeDisk.lean:319:0: 'OrderedPartitions.CriticalEdgeDisk.one_simple_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3457/3479] Replayed OrderedPartitions.CriticalEdgeOnePole
+info: OrderedPartitions/CriticalEdgeOnePole.lean:143:0: 'OrderedPartitions.CriticalEdgeCircle.denominator_differentiable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeOnePole.lean:144:0: 'OrderedPartitions.CriticalEdgeCircle.denominator_at_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOnePole.lean:145:0: 'OrderedPartitions.CriticalEdgeCircle.denominator_ofReal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOnePole.lean:146:0: 'OrderedPartitions.CriticalEdgeCircle.denominator_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOnePole.lean:147:0: 'OrderedPartitions.CriticalEdgeCircle.subcritical_one_simple_pole' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeOnePole.lean:148:0: 'OrderedPartitions.CriticalEdgeCircle.subcritical_one_real_pole' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeOnePole.lean:149:0: 'OrderedPartitions.CriticalEdgeCircle.subcritical_one_positive_pole' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3458/3479] Replayed OrderedPartitions.CriticalEdgeScaledContours
+info: OrderedPartitions/CriticalEdgeScaledContours.lean:109:0: 'OrderedPartitions.CriticalEdge.circleIntegral_affine' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScaledContours.lean:110:0: 'OrderedPartitions.CriticalEdge.scaled_displaced_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScaledContours.lean:111:0: 'OrderedPartitions.CriticalEdge.normalizedRow_eq_contours' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3462/3479] Replayed OrderedPartitions.CriticalEdgeKernelLimit
+info: OrderedPartitions/CriticalEdgeKernelLimit.lean:209:0: 'OrderedPartitions.CriticalEdge.secondQuotient_differentiable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeKernelLimit.lean:210:0: 'OrderedPartitions.CriticalEdge.rescaledDen_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeKernelLimit.lean:211:0: 'OrderedPartitions.CriticalEdge.compact_parameter_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeKernelLimit.lean:212:0: 'OrderedPartitions.CriticalEdge.scaledKernel_tendsto_uniformly' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeKernelLimit.lean:213:0: 'OrderedPartitions.CriticalEdge.scaledKernel_eventually_continuousOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeKernelLimit.lean:214:0: 'OrderedPartitions.CriticalEdge.scaledCircle_tendsto_uniformly' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3463/3479] Replayed OrderedPartitions.CriticalEdgeOuterDecay
+info: OrderedPartitions/CriticalEdgeOuterDecay.lean:78:0: 'OrderedPartitions.CriticalEdge.outer_contour_eventual_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOuterDecay.lean:79:0: 'OrderedPartitions.CriticalEdge.outer_contour_tendsto_uniformly' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3464/3479] Replayed OrderedPartitions.CriticalEdgeSquareCoordinate
+info: OrderedPartitions/CriticalEdgeSquareCoordinate.lean:125:0: 'OrderedPartitions.CriticalEdge.poleCoordinate_factor_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeSquareCoordinate.lean:126:0: 'OrderedPartitions.CriticalEdge.poleCoordinate_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeSquareCoordinate.lean:127:0: 'OrderedPartitions.CriticalEdge.inverse_poleCoordinate' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3465/3479] Replayed OrderedPartitions.ThreePoleDiskExistence
+info: OrderedPartitions/ThreePoleDiskExistence.lean:48:0: 'OrderedPartitions.ThreePole.exists_zero_of_boundary_dominance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3466/3479] Replayed OrderedPartitions.CriticalEdgePoleEndpoint
+info: OrderedPartitions/CriticalEdgePoleEndpoint.lean:248:0: 'OrderedPartitions.CriticalEdge.near_critical_axis_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgePoleEndpoint.lean:249:0: 'OrderedPartitions.CriticalEdge.positive_pole_tendsto_critical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgePoleEndpoint.lean:250:0: 'OrderedPartitions.CriticalEdge.critical_denominator_ne_zero_inside' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgePoleEndpoint.lean:251:0: 'OrderedPartitions.CriticalEdge.critical_denominator_closed_disk' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgePoleEndpoint.lean:252:0: 'OrderedPartitions.CriticalEdge.exists_positive_pole_branch' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgePoleEndpoint.lean:253:0: 'OrderedPartitions.CriticalEdge.exists_critical_closed_disk' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3467/3479] Replayed OrderedPartitions.CriticalEdgeTwoPoles
+info: OrderedPartitions/CriticalEdgeTwoPoles.lean:144:0: 'OrderedPartitions.CriticalEdge.actual_two_poles' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeTwoPoles.lean:145:0: 'OrderedPartitions.CriticalEdge.enlarge_disk' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeTwoPoles.lean:146:0: 'OrderedPartitions.CriticalEdge.split_zero_simple' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3472/3479] Replayed OrderedPartitions.CriticalEdgeMovingPoles
+info: OrderedPartitions/CriticalEdgeMovingPoles.lean:117:0: 'OrderedPartitions.CriticalEdge.two_pole_contour_geometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3474/3479] Replayed OrderedPartitions.CriticalEdgeSinc
+info: OrderedPartitions/CriticalEdgeSinc.lean:95:0: 'OrderedPartitions.CriticalEdge.innerSinc_of_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeSinc.lean:96:0: 'OrderedPartitions.CriticalEdge.limiting_contour_eq_sinc' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3475/3479] Built OrderedPartitions.CriticalEdgeExplicitGap (2.2s)
+info: OrderedPartitions/CriticalEdgeExplicitGap.lean:56:0: 'OrderedPartitions.CriticalEdge.norm_den_deriv_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeExplicitGap.lean:57:0: 'OrderedPartitions.CriticalEdge.pole_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3476/3479] Replayed OrderedPartitions.CriticalEdgeSincZeros
+info: OrderedPartitions/CriticalEdgeSincZeros.lean:85:0: 'OrderedPartitions.CriticalEdge.innerSinc_analytic_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeSincZeros.lean:86:0: 'OrderedPartitions.CriticalEdge.innerSinc_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeSincZeros.lean:87:0: 'OrderedPartitions.CriticalEdge.innerSinc_zeros' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeSincZeros.lean:88:0: 'OrderedPartitions.CriticalEdge.innerSinc_simple' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3477/3479] Replayed OrderedPartitions.CriticalEdgeInnerLimit
+info: OrderedPartitions/CriticalEdgeInnerLimit.lean:102:0: 'OrderedPartitions.CriticalEdge.normalizedInnerRow_tendsto_sinc' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeInnerLimit.lean:103:0: 'OrderedPartitions.CriticalEdge.original_inner_sinc_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3478/3479] Built OrderedPartitions.CriticalEdgeFiniteZeroFree (2.3s)
+info: OrderedPartitions/CriticalEdgeFiniteZeroFree.lean:174:0: 'OrderedPartitions.CriticalEdge.original_coeff_one_residue' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeFiniteZeroFree.lean:175:0: 'OrderedPartitions.CriticalEdge.subcriticalFraction_pos_lt_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeFiniteZeroFree.lean:176:0: 'OrderedPartitions.CriticalEdge.original_no_zero_of_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeFiniteZeroFree.lean:177:0: 'OrderedPartitions.CriticalEdge.original_no_zero_in_disk' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeFiniteZeroFree.lean:178:0: 'OrderedPartitions.CriticalEdge.geometric_condition_of_log' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeFiniteZeroFree.lean:179:0: 'OrderedPartitions.CriticalEdge.original_no_zero_in_disk_of_log' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeFiniteZeroFree.lean:180:0: 'OrderedPartitions.CriticalEdge.eventually_original_no_zero_in_disk' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeFiniteZeroFree.lean:181:0: 'OrderedPartitions.CriticalEdge.original_effective_critical_disk' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3479/3479] Built OrderedPartitions.CriticalEdgeRealWitness (2.6s)
+info: OrderedPartitions/CriticalEdgeRealWitness.lean:74:0: 'OrderedPartitions.CriticalEdge.eventual_real_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (3479 jobs).
+building 31-32 of 32 OrderedPartitions.CriticalEdgeLogRadius OrderedPartitions.CriticalEdgeInnerRadii
+ℹ [3005/3015] Replayed OrderedPartitions.FirstJump
+info: OrderedPartitions/FirstJump.lean:159:0: 'OrderedPartitions.count_above_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:160:0: 'OrderedPartitions.count_zero_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:161:0: 'OrderedPartitions.count_one_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:162:0: 'OrderedPartitions.capacity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:163:0: 'OrderedPartitions.first_jump_two_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:164:0: 'OrderedPartitions.firstJumpEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:165:0: 'OrderedPartitions.first_jump_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3006/3015] Replayed OrderedPartitions.FirstJumpRows
+info: OrderedPartitions/FirstJumpRows.lean:50:0: 'OrderedPartitions.coeff_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJumpRows.lean:51:0: 'OrderedPartitions.row_linear' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJumpRows.lean:52:0: 'OrderedPartitions.row_first_jump' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3007/3015] Replayed OrderedPartitions.LastBlock
+info: OrderedPartitions/LastBlock.lean:155:0: 'OrderedPartitions.large_append_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlock.lean:156:0: 'OrderedPartitions.lastBlockEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlock.lean:157:0: 'OrderedPartitions.blockRow_last' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3008/3015] Replayed OrderedPartitions.LastBlockRow
+info: OrderedPartitions/LastBlockRow.lean:104:0: 'OrderedPartitions.count_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlockRow.lean:105:0: 'OrderedPartitions.coeff_blockRow' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlockRow.lean:106:0: 'OrderedPartitions.row_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlockRow.lean:107:0: 'OrderedPartitions.row_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3010/3015] Replayed OrderedPartitions.MarkedSeries
+info: OrderedPartitions/MarkedSeries.lean:140:0: 'OrderedPartitions.row_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:141:0: 'OrderedPartitions.markedCount_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:142:0: 'OrderedPartitions.markedCount_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:143:0: 'OrderedPartitions.markedCount_eq_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:144:0: 'OrderedPartitions.markedCount_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:145:0: 'OrderedPartitions.free_resolvent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:146:0: 'OrderedPartitions.marked_segments' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3047/3201] Replayed OrderedPartitions.OriginalEGF
+info: OrderedPartitions/OriginalEGF.lean:91:0: 'OrderedPartitions.moment_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/OriginalEGF.lean:92:0: 'OrderedPartitions.original_egf' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3142/3201] Replayed OrderedPartitions.CriticalEdgeOriginal
+info: OrderedPartitions/CriticalEdgeOriginal.lean:158:0: 'OrderedPartitions.CriticalEdge.complex_row_resolvent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOriginal.lean:159:0: 'OrderedPartitions.CriticalEdge.inverse_den_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOriginal.lean:160:0: 'OrderedPartitions.CriticalEdge.inverse_den_series' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3158/3201] Replayed OrderedPartitions.CriticalEdgeCircle
+info: OrderedPartitions/CriticalEdgeCircle.lean:268:0: 'OrderedPartitions.CriticalEdgeCircle.norm_sub_exp_circle_strict' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:269:0: 'OrderedPartitions.CriticalEdgeCircle.norm_sub_exp_circle' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:270:0: 'OrderedPartitions.CriticalEdgeCircle.tailComplex_ofReal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:271:0: 'OrderedPartitions.CriticalEdgeCircle.norm_tailComplex_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:272:0: 'OrderedPartitions.CriticalEdgeCircle.boundary_dominance' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:273:0: 'OrderedPartitions.CriticalEdgeCircle.denominator_ne_zero_on_circle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:274:0: 'OrderedPartitions.CriticalEdgeCircle.norm_denominator_lower_on_circle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeCircle.lean:275:0: 'OrderedPartitions.CriticalEdgeCircle.denominator_zero_on_circle_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3159/3201] Replayed OrderedPartitions.CriticalEdgeActivity
+info: OrderedPartitions/CriticalEdgeActivity.lean:34:0: 'OrderedPartitions.CriticalEdge.poleDen_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3160/3201] Replayed OrderedPartitions.CriticalEdgeScalar
+info: OrderedPartitions/CriticalEdgeScalar.lean:65:0: 'OrderedPartitions.CriticalEdge.criticalTest_deriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:66:0: 'OrderedPartitions.CriticalEdge.criticalTest_strictAnti' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:114:0: 'OrderedPartitions.CriticalEdge.unique_critical' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:115:0: 'OrderedPartitions.CriticalEdge.ratio_deriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:163:0: 'OrderedPartitions.CriticalEdge.strict_maximum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:198:0: 'OrderedPartitions.CriticalEdge.critical_contact' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:218:0: 'OrderedPartitions.CriticalEdge.critical_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScalar.lean:219:0: 'OrderedPartitions.CriticalEdge.critical_curvature' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3161/3201] Replayed OrderedPartitions.CriticalEdgeScaling
+info: OrderedPartitions/CriticalEdgeScaling.lean:158:0: 'OrderedPartitions.CriticalEdge.quadratic_scaling_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScaling.lean:159:0: 'OrderedPartitions.CriticalEdge.rescaled_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScaling.lean:160:0: 'OrderedPartitions.CriticalEdge.rescaled_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScaling.lean:161:0: 'OrderedPartitions.CriticalEdge.rescaled_analytic' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScaling.lean:162:0: 'OrderedPartitions.CriticalEdge.cden_contact' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3162/3201] Replayed OrderedPartitions.CriticalEdgeExplicitGap
+info: OrderedPartitions/CriticalEdgeExplicitGap.lean:56:0: 'OrderedPartitions.CriticalEdge.norm_den_deriv_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeExplicitGap.lean:57:0: 'OrderedPartitions.CriticalEdge.pole_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3438/3454] Replayed OrderedPartitions.CriticalEdgeDisk
+info: OrderedPartitions/CriticalEdgeDisk.lean:318:0: 'OrderedPartitions.CriticalEdgeDisk.one_simple_zero_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeDisk.lean:319:0: 'OrderedPartitions.CriticalEdgeDisk.one_simple_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3449/3454] Replayed OrderedPartitions.CriticalEdgeOnePole
+info: OrderedPartitions/CriticalEdgeOnePole.lean:143:0: 'OrderedPartitions.CriticalEdgeCircle.denominator_differentiable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeOnePole.lean:144:0: 'OrderedPartitions.CriticalEdgeCircle.denominator_at_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOnePole.lean:145:0: 'OrderedPartitions.CriticalEdgeCircle.denominator_ofReal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOnePole.lean:146:0: 'OrderedPartitions.CriticalEdgeCircle.denominator_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOnePole.lean:147:0: 'OrderedPartitions.CriticalEdgeCircle.subcritical_one_simple_pole' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeOnePole.lean:148:0: 'OrderedPartitions.CriticalEdgeCircle.subcritical_one_real_pole' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeOnePole.lean:149:0: 'OrderedPartitions.CriticalEdgeCircle.subcritical_one_positive_pole' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3450/3454] Replayed OrderedPartitions.FiniteSimplePoles
+info: OrderedPartitions/FiniteSimplePoles.lean:75:0: 'OrderedPartitions.FiniteSimplePoles.remove' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3451/3454] Replayed OrderedPartitions.CriticalEdgeOneResidue
+info: OrderedPartitions/CriticalEdgeOneResidue.lean:174:0: 'OrderedPartitions.CriticalEdge.coefficient_one_pole' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOneResidue.lean:175:0: 'OrderedPartitions.CriticalEdge.norm_circleRemainder_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3452/3454] Replayed OrderedPartitions.CriticalEdgeFiniteZeroFree
+info: OrderedPartitions/CriticalEdgeFiniteZeroFree.lean:174:0: 'OrderedPartitions.CriticalEdge.original_coeff_one_residue' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeFiniteZeroFree.lean:175:0: 'OrderedPartitions.CriticalEdge.subcriticalFraction_pos_lt_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeFiniteZeroFree.lean:176:0: 'OrderedPartitions.CriticalEdge.original_no_zero_of_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeFiniteZeroFree.lean:177:0: 'OrderedPartitions.CriticalEdge.original_no_zero_in_disk' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeFiniteZeroFree.lean:178:0: 'OrderedPartitions.CriticalEdge.geometric_condition_of_log' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeFiniteZeroFree.lean:179:0: 'OrderedPartitions.CriticalEdge.original_no_zero_in_disk_of_log' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeFiniteZeroFree.lean:180:0: 'OrderedPartitions.CriticalEdge.eventually_original_no_zero_in_disk' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeFiniteZeroFree.lean:181:0: 'OrderedPartitions.CriticalEdge.original_effective_critical_disk' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3454/3481] Built OrderedPartitions.CriticalEdgeLogRadius (2.6s)
+info: OrderedPartitions/CriticalEdgeLogRadius.lean:72:0: 'OrderedPartitions.CriticalEdge.root_distance_log_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeLogRadius.lean:73:0: 'OrderedPartitions.CriticalEdge.original_log_radius' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3460/3481] Replayed OrderedPartitions.CriticalEdgeContours
+info: OrderedPartitions/CriticalEdgeContours.lean:212:0: 'OrderedPartitions.CriticalEdge.coefficient_eq_sub_displaced' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3461/3481] Replayed OrderedPartitions.CriticalEdgeScaledContours
+info: OrderedPartitions/CriticalEdgeScaledContours.lean:109:0: 'OrderedPartitions.CriticalEdge.circleIntegral_affine' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScaledContours.lean:110:0: 'OrderedPartitions.CriticalEdge.scaled_displaced_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeScaledContours.lean:111:0: 'OrderedPartitions.CriticalEdge.normalizedRow_eq_contours' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3465/3481] Replayed OrderedPartitions.CriticalEdgeKernelLimit
+info: OrderedPartitions/CriticalEdgeKernelLimit.lean:209:0: 'OrderedPartitions.CriticalEdge.secondQuotient_differentiable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeKernelLimit.lean:210:0: 'OrderedPartitions.CriticalEdge.rescaledDen_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeKernelLimit.lean:211:0: 'OrderedPartitions.CriticalEdge.compact_parameter_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeKernelLimit.lean:212:0: 'OrderedPartitions.CriticalEdge.scaledKernel_tendsto_uniformly' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeKernelLimit.lean:213:0: 'OrderedPartitions.CriticalEdge.scaledKernel_eventually_continuousOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeKernelLimit.lean:214:0: 'OrderedPartitions.CriticalEdge.scaledCircle_tendsto_uniformly' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3466/3481] Replayed OrderedPartitions.CriticalEdgeOuterDecay
+info: OrderedPartitions/CriticalEdgeOuterDecay.lean:78:0: 'OrderedPartitions.CriticalEdge.outer_contour_eventual_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeOuterDecay.lean:79:0: 'OrderedPartitions.CriticalEdge.outer_contour_tendsto_uniformly' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3467/3481] Replayed OrderedPartitions.CriticalEdgeSquareCoordinate
+info: OrderedPartitions/CriticalEdgeSquareCoordinate.lean:125:0: 'OrderedPartitions.CriticalEdge.poleCoordinate_factor_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeSquareCoordinate.lean:126:0: 'OrderedPartitions.CriticalEdge.poleCoordinate_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeSquareCoordinate.lean:127:0: 'OrderedPartitions.CriticalEdge.inverse_poleCoordinate' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3468/3481] Replayed OrderedPartitions.ThreePoleDiskExistence
+info: OrderedPartitions/ThreePoleDiskExistence.lean:48:0: 'OrderedPartitions.ThreePole.exists_zero_of_boundary_dominance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3469/3481] Replayed OrderedPartitions.CriticalEdgePoleEndpoint
+info: OrderedPartitions/CriticalEdgePoleEndpoint.lean:248:0: 'OrderedPartitions.CriticalEdge.near_critical_axis_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgePoleEndpoint.lean:249:0: 'OrderedPartitions.CriticalEdge.positive_pole_tendsto_critical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgePoleEndpoint.lean:250:0: 'OrderedPartitions.CriticalEdge.critical_denominator_ne_zero_inside' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgePoleEndpoint.lean:251:0: 'OrderedPartitions.CriticalEdge.critical_denominator_closed_disk' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgePoleEndpoint.lean:252:0: 'OrderedPartitions.CriticalEdge.exists_positive_pole_branch' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgePoleEndpoint.lean:253:0: 'OrderedPartitions.CriticalEdge.exists_critical_closed_disk' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3470/3481] Replayed OrderedPartitions.CriticalEdgeTwoPoles
+info: OrderedPartitions/CriticalEdgeTwoPoles.lean:144:0: 'OrderedPartitions.CriticalEdge.actual_two_poles' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeTwoPoles.lean:145:0: 'OrderedPartitions.CriticalEdge.enlarge_disk' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeTwoPoles.lean:146:0: 'OrderedPartitions.CriticalEdge.split_zero_simple' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3475/3481] Replayed OrderedPartitions.CriticalEdgeMovingPoles
+info: OrderedPartitions/CriticalEdgeMovingPoles.lean:117:0: 'OrderedPartitions.CriticalEdge.two_pole_contour_geometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3477/3481] Replayed OrderedPartitions.CriticalEdgeSinc
+info: OrderedPartitions/CriticalEdgeSinc.lean:95:0: 'OrderedPartitions.CriticalEdge.innerSinc_of_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeSinc.lean:96:0: 'OrderedPartitions.CriticalEdge.limiting_contour_eq_sinc' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3478/3481] Replayed OrderedPartitions.CriticalEdgeSincZeros
+info: OrderedPartitions/CriticalEdgeSincZeros.lean:85:0: 'OrderedPartitions.CriticalEdge.innerSinc_analytic_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeSincZeros.lean:86:0: 'OrderedPartitions.CriticalEdge.innerSinc_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeSincZeros.lean:87:0: 'OrderedPartitions.CriticalEdge.innerSinc_zeros' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/CriticalEdgeSincZeros.lean:88:0: 'OrderedPartitions.CriticalEdge.innerSinc_simple' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3479/3481] Replayed OrderedPartitions.CriticalEdgeInnerLimit
+info: OrderedPartitions/CriticalEdgeInnerLimit.lean:102:0: 'OrderedPartitions.CriticalEdge.normalizedInnerRow_tendsto_sinc' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: OrderedPartitions/CriticalEdgeInnerLimit.lean:103:0: 'OrderedPartitions.CriticalEdge.original_inner_sinc_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3480/3481] Replayed OrderedPartitions.CriticalEdgeRealWitness
+info: OrderedPartitions/CriticalEdgeRealWitness.lean:74:0: 'OrderedPartitions.CriticalEdge.eventual_real_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3481/3481] Built OrderedPartitions.CriticalEdgeInnerRadii (2.7s)
+info: OrderedPartitions/CriticalEdgeInnerRadii.lean:80:0: 'OrderedPartitions.CriticalEdge.original_inner_radii' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (3481 jobs).
+strict_build_exit=0
+BEGIN targeted audit
+OrderedPartitions.CriticalEdge.original_inner_radii {k : ℕ} (hk : 2 ≤ k) :
+  ∃ a ∈ Set.Ioo (Real.log 2) 1,
+    OrderedPartitions.CriticalEdge.criticalTest k a = 0 ∧
+      1 < OrderedPartitions.CriticalEdge.ratio k a ∧
+        Filter.Tendsto (fun n => Metric.infDist 1 (OrderedPartitions.CriticalEdge.originalZeroSet k n)) Filter.atTop
+            (nhds (OrderedPartitions.CriticalEdge.ratio k a)) ∧
+          Filter.Tendsto (fun n => Metric.infDist 0 (OrderedPartitions.CriticalEdge.originalZeroSet k n)) Filter.atTop
+            (nhds (OrderedPartitions.CriticalEdge.ratio k a - 1))
+OrderedPartitions.CriticalEdge.original_inner_sinc_limit {k : ℕ} (hk : 2 ≤ k) :
+  ∃ a ∈ Set.Ioo (Real.log 2) 1,
+    OrderedPartitions.CriticalEdge.criticalTest k a = 0 ∧
+      1 < OrderedPartitions.CriticalEdge.ratio k a ∧
+        ∀ (U : ℝ),
+          TendstoUniformlyOn (fun n => OrderedPartitions.CriticalEdge.normalizedInnerRow k a n)
+            OrderedPartitions.CriticalEdge.innerSinc Filter.atTop (Metric.closedBall 0 U)
+OrderedPartitions.CriticalEdge.eventual_real_witness {k : ℕ} {a x y : ℝ} (ha : Real.log 2 < a) (ha₁ : a ≤ 1)
+  (hz : OrderedPartitions.CriticalEdge.criticalTest k a = 0)
+  (hmax :
+    ∀ (z : ℝ), 0 < z → z ≠ a → OrderedPartitions.CriticalEdge.ratio k z < OrderedPartitions.CriticalEdge.ratio k a)
+  (xp : 0 < x) (xy : x < y) (signs : Real.sin x * Real.sin y < 0) :
+  ∀ᶠ (n : ℕ) in Filter.atTop,
+    ∃ u ∈ Set.Ioo (x ^ 2) (y ^ 2),
+      Polynomial.eval
+          (1 -
+            (OrderedPartitions.CriticalEdge.ratio k a + OrderedPartitions.CriticalEdge.edgeWidth k a * u * (↑n)⁻¹ ^ 2))
+          (OrderedPartitions.row n (k + 2)) =
+        0
+OrderedPartitions.CriticalEdge.root_distance_log_bound {k n : ℕ} {a C : ℝ} (ha : Real.log 2 < a) (a1 : a ≤ 1)
+  (hC : 1 < C) (height : C * OrderedPartitions.CriticalEdge.tail (k + 2) a = Real.exp a - 2) (hn : 3 ≤ n) {t : ℂ}
+  (root : Polynomial.eval₂ Complex.ofRealHom t (OrderedPartitions.row n (k + 2)) = 0) :
+  C - OrderedPartitions.CriticalEdge.radialLoss k a C n < ‖1 - t‖ ∧
+    C - 1 - OrderedPartitions.CriticalEdge.radialLoss k a C n < ‖t‖
+OrderedPartitions.CriticalEdge.two_pole_contour_geometry {k : ℕ} {a : ℝ} (ha : Real.log 2 < a) (a1 : a ≤ 1)
+  (crit : OrderedPartitions.CriticalEdge.criticalTest k a = 0)
+  (hmax :
+    ∀ (x : ℝ), 0 < x → x ≠ a → OrderedPartitions.CriticalEdge.ratio k x < OrderedPartitions.CriticalEdge.ratio k a) :
+  ∃ R,
+    a < R ∧
+      (∀ (z : ℂ),
+          ‖z‖ = R →
+            OrderedPartitions.CriticalEdge.generatingDen (k + 2) (↑(OrderedPartitions.CriticalEdge.ratio k a)) z ≠ 0) ∧
+        ∀ (K : ℝ),
+          0 < K →
+            ∀ᶠ (n : ℕ) in Filter.atTop,
+              have M := 2 * K + 1;
+              have rad := a / ↑n * M;
+              Metric.closedBall (↑a) rad ⊆ Metric.ball 0 R ∧
+                0 ∉ Metric.closedBall (↑a) rad ∧
+                  ∀ (u : ℂ),
+                    u ≠ 0 →
+                      ‖u‖ ≤ K ^ 2 →
+                        have f :=
+                          OrderedPartitions.CriticalEdge.generatingDen (k + 2)
+                            (↑(OrderedPartitions.CriticalEdge.ratio k a) +
+                              ↑(OrderedPartitions.CriticalEdge.edgeWidth k a) * u / ↑n ^ 2);
+                        ∃ P,
+                          P.card = 2 ∧
+                            (∀ p ∈ P, p ∈ Metric.ball (↑a) rad ∧ f p = 0 ∧ deriv f p ≠ 0) ∧
+                              ∀ z ∈ Metric.closedBall 0 R, f z = 0 → z ∈ P
+OrderedPartitions.CriticalEdge.limiting_contour_eq_sinc {M : ℝ} (hM : 0 < M) {u : ℂ} (hu : ‖u‖ < M ^ 2) :
+  -((2 * ↑Real.pi * Complex.I)⁻¹ • ∮ (v : ℂ) in C(0, M), Complex.exp (-v) / (v ^ 2 + u)) =
+    OrderedPartitions.CriticalEdge.innerSinc u
+'OrderedPartitions.CriticalEdge.original_inner_radii' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdge.original_inner_sinc_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdge.eventual_real_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdge.root_distance_log_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdge.two_pole_contour_geometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdge.limiting_contour_eq_sinc' depends on axioms: [propext, Classical.choice, Quot.sound]
+END targeted audit
+'OrderedPartitions.FiniteSimplePoles.remove' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.FiniteSimplePoles
+kernel_replay_exit=0 OrderedPartitions.FiniteSimplePoles source_sha256=175ec2feea30fa7dd432569529a5969464fd442a4d03b2b50410faafb5a8d780 object_sha256=36a2b7be17fef1b9b97679e8f85cbab7c5ec0597ac26f51d187a77165f9b352a
+'OrderedPartitions.CriticalEdge.coefficient_one_pole' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdge.norm_circleRemainder_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.CriticalEdgeOneResidue
+kernel_replay_exit=0 OrderedPartitions.CriticalEdgeOneResidue source_sha256=28c1c20f38181fe556be538b82db74dc850dbace2659ec5f852508796cf3637d object_sha256=9498f46638a99fc2f5755de658382955ccf8d7da4bf1f79671546c4e4e707b9e
+'OrderedPartitions.CriticalEdge.coefficient_eq_sub_displaced' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.CriticalEdgeContours
+kernel_replay_exit=0 OrderedPartitions.CriticalEdgeContours source_sha256=417cb26d1631e77151a4f56480ecdd4fdcced45b537a1a25835bfe6ffbc278ba object_sha256=9c822181461419cc7dfb7c0b78f929780fc705d8f9130cab7cee0b53bf158d08
+'OrderedPartitions.count_above_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.count_zero_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.count_one_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.capacity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.first_jump_two_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.firstJumpEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.first_jump_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.FirstJump
+kernel_replay_exit=0 OrderedPartitions.FirstJump source_sha256=0494d98e035cdec3dbf7cc313599fac47f8287d6c838c1eaeccdd0be0db3bb82 object_sha256=d3d1b924c0126d039c37b63539374e9d311ae171240963e00f9a5653ec54baa9
+'OrderedPartitions.coeff_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.row_linear' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.row_first_jump' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.FirstJumpRows
+kernel_replay_exit=0 OrderedPartitions.FirstJumpRows source_sha256=bb653dcf6e7054cdff90f8727a45ca6207983dde7ac2e345d7852837d7f97089 object_sha256=170d8926726fe0c286e0ad0f26cd9503d3f083dd04403995c37c32eb290c7515
+'OrderedPartitions.large_append_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.lastBlockEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.blockRow_last' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.LastBlock
+kernel_replay_exit=0 OrderedPartitions.LastBlock source_sha256=d78ee32e13d51ac16a92e6949b99894944453268924e36ce88d3977368009466 object_sha256=08c8930e87a28186d2bbbe811ab253c2c0ba2bef994ae904bda96b1cb66907fa
+'OrderedPartitions.count_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.coeff_blockRow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.row_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.row_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.LastBlockRow
+kernel_replay_exit=0 OrderedPartitions.LastBlockRow source_sha256=c55767eb08cbaae0bcde68ae1834b91ba4040f4409e178840da2f9ef3fac7b4f object_sha256=36d0d301ec2e9758fe01d38bf68d64e2f16ac18d96b37ad59a66c2f3c71bdbcc
+'OrderedPartitions.row_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.markedCount_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.markedCount_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.markedCount_eq_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.markedCount_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.free_resolvent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.marked_segments' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.MarkedSeries
+kernel_replay_exit=0 OrderedPartitions.MarkedSeries source_sha256=a2553feea323374d6cb5cf07ba77eae7a7346606b7921bdb0c2f71ec598b34a7 object_sha256=9e0e82c69efa995e8159abe6d312d4da8ddfb98e9247c2995e37819306ee9d4c
+'OrderedPartitions.moment_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.original_egf' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.OriginalEGF
+kernel_replay_exit=0 OrderedPartitions.OriginalEGF source_sha256=3d63f6ca2b5ba35f4a0a5cf6703e3355f2caffa64d5e4f5ee01ec94a02b6124d object_sha256=fd73f54fec2c7f304a271040d64b9c821916442647dd59ee785594d085fcdb53
+'OrderedPartitions.CriticalEdge.complex_row_resolvent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdge.inverse_den_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdge.inverse_den_series' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.CriticalEdgeOriginal
+kernel_replay_exit=0 OrderedPartitions.CriticalEdgeOriginal source_sha256=78cc1cf21476160c8bec0a59734f1a1eae7243777436f02693a4f213327e27fe object_sha256=5c7430cbb29a4c891b8831110d7b2e94f2002aedaa6af02ca0b5373fcd650351
+'OrderedPartitions.CriticalEdgeCircle.norm_sub_exp_circle_strict' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OrderedPartitions.CriticalEdgeCircle.norm_sub_exp_circle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdgeCircle.tailComplex_ofReal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdgeCircle.norm_tailComplex_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdgeCircle.boundary_dominance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdgeCircle.denominator_ne_zero_on_circle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OrderedPartitions.CriticalEdgeCircle.norm_denominator_lower_on_circle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OrderedPartitions.CriticalEdgeCircle.denominator_zero_on_circle_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+replaying OrderedPartitions.CriticalEdgeCircle
+kernel_replay_exit=0 OrderedPartitions.CriticalEdgeCircle source_sha256=1754f014925160f98863a86484b4cf5885b1c7ce56b0b032f60a7fd7141f5fcb object_sha256=694f75f89103ed1047b434c94d1a483402a52d5f1f39af83662232719f9e314d
+'OrderedPartitions.CriticalEdge.poleDen_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.CriticalEdgeActivity
+kernel_replay_exit=0 OrderedPartitions.CriticalEdgeActivity source_sha256=4d48cf171c7f679cc204f7a618b72fd0e16468d1e8b5649d993e17131d1cf765 object_sha256=a281f75ff1000743e06215c49c5a77db3189946d86f7591d668846e1498a6203
+'OrderedPartitions.CriticalEdge.criticalTest_deriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdge.criticalTest_strictAnti' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdge.unique_critical' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdge.ratio_deriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdge.strict_maximum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdge.critical_contact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdge.critical_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdge.critical_curvature' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.CriticalEdgeScalar
+kernel_replay_exit=0 OrderedPartitions.CriticalEdgeScalar source_sha256=19423bea32d03591230d0fbe262d3aa463e2f75aacb191c7d0367a33c336405e object_sha256=1ebe1c8453d4cf1ccc04d93c719f6ad44901492286459944d0f5a20e468933d1
+'OrderedPartitions.CriticalEdge.quadratic_scaling_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdge.rescaled_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdge.rescaled_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdge.rescaled_analytic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdge.cden_contact' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.CriticalEdgeScaling
+kernel_replay_exit=0 OrderedPartitions.CriticalEdgeScaling source_sha256=c30bcd2885bc51f0e3515e0f8b30048fbd5f8ac0d097b5263691d25eb8252650 object_sha256=1edf2543e1d120c2fe7c12ebab00b7288ddd3c3ec468b8ed5ce36c321a12b0c0
+'OrderedPartitions.CriticalEdgeDisk.one_simple_zero_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdgeDisk.one_simple_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.CriticalEdgeDisk
+kernel_replay_exit=0 OrderedPartitions.CriticalEdgeDisk source_sha256=87d5113702aa907b3b85e7d6e6bdc23dffca30182e3e16cc11b0ec156b4bbcf5 object_sha256=5ebff633bdc426a1a7dc381618b1f562f7b8b195430b7955f588228076493bcf
+'OrderedPartitions.CriticalEdgeCircle.denominator_differentiable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OrderedPartitions.CriticalEdgeCircle.denominator_at_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdgeCircle.denominator_ofReal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdgeCircle.denominator_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdgeCircle.subcritical_one_simple_pole' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OrderedPartitions.CriticalEdgeCircle.subcritical_one_real_pole' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OrderedPartitions.CriticalEdgeCircle.subcritical_one_positive_pole' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+replaying OrderedPartitions.CriticalEdgeOnePole
+kernel_replay_exit=0 OrderedPartitions.CriticalEdgeOnePole source_sha256=d29dbfd94db98968b02dff8c22e343daf78a3f45e1d0731dbff6c0903fa6547b object_sha256=9ca961e3f1e0317f3b6956bb1680adc46a5b89625ae05fd23e19c34a12f1d72c
+'OrderedPartitions.CriticalEdge.circleIntegral_affine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdge.scaled_displaced_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdge.normalizedRow_eq_contours' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.CriticalEdgeScaledContours
+kernel_replay_exit=0 OrderedPartitions.CriticalEdgeScaledContours source_sha256=ce563020d3be685fa25cd1799cb31baa6ea4d86cfe3c5cc1d8540d419be43b2f object_sha256=3de2f0b8eac2afc4eefa85c0e875b80a0ce4b1d4758c3fafa8bafbf87b65ac9a
+'OrderedPartitions.CriticalEdge.secondQuotient_differentiable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OrderedPartitions.CriticalEdge.rescaledDen_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdge.compact_parameter_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdge.scaledKernel_tendsto_uniformly' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OrderedPartitions.CriticalEdge.scaledKernel_eventually_continuousOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OrderedPartitions.CriticalEdge.scaledCircle_tendsto_uniformly' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+replaying OrderedPartitions.CriticalEdgeKernelLimit
+kernel_replay_exit=0 OrderedPartitions.CriticalEdgeKernelLimit source_sha256=cb6b50da08dc707581b9c8359d9a726a62ecd2412a6e314bd3f091568617bf5a object_sha256=5fdac5da818f2b5db6cbf4a01d20894a224a210260ebd57a6acd36dc6eea67bc
+'OrderedPartitions.CriticalEdge.outer_contour_eventual_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdge.outer_contour_tendsto_uniformly' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+replaying OrderedPartitions.CriticalEdgeOuterDecay
+kernel_replay_exit=0 OrderedPartitions.CriticalEdgeOuterDecay source_sha256=c9c3a2a028fbea2f1173b3f689b555719ea7fb021a22f7c2d6f8928abe8da3e3 object_sha256=bd0fd20a40ca99f715b611ccbdd98bf8904f172edea4b73485055994273c1fa4
+'OrderedPartitions.CriticalEdge.poleCoordinate_factor_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdge.poleCoordinate_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdge.inverse_poleCoordinate' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.CriticalEdgeSquareCoordinate
+kernel_replay_exit=0 OrderedPartitions.CriticalEdgeSquareCoordinate source_sha256=95b33bc5420f53512c56a1ca0456bfcc824b0bb9f5b3e13cc02898fc7a680f9e object_sha256=f1ad993698113721be9059a9016377f528cd122f8073a3390ced8927088e65db
+'OrderedPartitions.ThreePole.exists_zero_of_boundary_dominance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+replaying OrderedPartitions.ThreePoleDiskExistence
+kernel_replay_exit=0 OrderedPartitions.ThreePoleDiskExistence source_sha256=1732ee498e61a50ec27474ca2f627b61b3ccde638054a96275ff3b770d3c8e34 object_sha256=21c5cd400860122f3c8958a3dbb4d192eb1198798efd0378edfd2f354567541b
+'OrderedPartitions.CriticalEdge.near_critical_axis_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdge.positive_pole_tendsto_critical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OrderedPartitions.CriticalEdge.critical_denominator_ne_zero_inside' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OrderedPartitions.CriticalEdge.critical_denominator_closed_disk' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OrderedPartitions.CriticalEdge.exists_positive_pole_branch' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdge.exists_critical_closed_disk' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.CriticalEdgePoleEndpoint
+kernel_replay_exit=0 OrderedPartitions.CriticalEdgePoleEndpoint source_sha256=c16c0bf636ff0c44318c8e90064c7a96ba9aa5e622de33a8ffb33a73256083cc object_sha256=8a5e62e0350445f15ce688711233d115462668e05a75be3baf9e18bd6048a09d
+'OrderedPartitions.CriticalEdge.actual_two_poles' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdge.enlarge_disk' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdge.split_zero_simple' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.CriticalEdgeTwoPoles
+kernel_replay_exit=0 OrderedPartitions.CriticalEdgeTwoPoles source_sha256=7b6e8e881b32a6587a329f1e48fd6a7be4929a87c70cb764716bd22067344052 object_sha256=8a6ac7d416781e78266ed13101407adfd415cd4b046079f818fe69ced5dba905
+'OrderedPartitions.CriticalEdge.two_pole_contour_geometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.CriticalEdgeMovingPoles
+kernel_replay_exit=0 OrderedPartitions.CriticalEdgeMovingPoles source_sha256=bb2e0fd08392dafffd6806c0bd77ae3c8b78bb53e0d6ef854a781f13e1b4cc64 object_sha256=1da0e5200627eaab78b8cf67b67763fa53866d3fb9c6084e176531ee9cebeb82
+'OrderedPartitions.CriticalEdge.innerSinc_of_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdge.limiting_contour_eq_sinc' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.CriticalEdgeSinc
+kernel_replay_exit=0 OrderedPartitions.CriticalEdgeSinc source_sha256=9cfeac3cafe6f8955727fa69f3d3c48240735178b30dccade0dbfa462a678e6d object_sha256=04a6c5fdcceba8f28b9da0db3aa6614d0d1a36e3039ae55cec5c474c75e1253d
+'OrderedPartitions.CriticalEdge.innerSinc_analytic_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdge.innerSinc_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdge.innerSinc_zeros' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdge.innerSinc_simple' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.CriticalEdgeSincZeros
+kernel_replay_exit=0 OrderedPartitions.CriticalEdgeSincZeros source_sha256=98e4862c6e95f78c4445b7e6d1aa42b2292a0df90deefb3854428a9db07b13dc object_sha256=a75afd5a2425508fa4f510ed61d6f33993e024ed67ab65b81ce0adc64c627d41
+'OrderedPartitions.CriticalEdge.normalizedInnerRow_tendsto_sinc' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OrderedPartitions.CriticalEdge.original_inner_sinc_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.CriticalEdgeInnerLimit
+kernel_replay_exit=0 OrderedPartitions.CriticalEdgeInnerLimit source_sha256=008c882b18ff3bf1a89d749394b8139989bc2a7bdddf276fc2944185652a62d3 object_sha256=3679bfaf97e24111812f01b3d2a6b24fc8f4294db4e195f886c62f33d83ed4ac
+'OrderedPartitions.CriticalEdge.eventual_real_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.CriticalEdgeRealWitness
+kernel_replay_exit=0 OrderedPartitions.CriticalEdgeRealWitness source_sha256=988417c204ced54966bd6d2e738b4bf005247e3cfe9e26bcf7479b513c58204f object_sha256=4d13427c5317849082331d8c0929359ab89979a2421ecd2dc6a4ad71f84c8560
+'OrderedPartitions.CriticalEdge.norm_den_deriv_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdge.pole_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.CriticalEdgeExplicitGap
+kernel_replay_exit=0 OrderedPartitions.CriticalEdgeExplicitGap source_sha256=c011eb59036b42d04189edfda42fc9c330ca8e671e698d30e29e2ce150b69871 object_sha256=fadc31a0122d5c87b0a4ba1465f130bdaee2c63cfbb4803f24db570344ddf966
+'OrderedPartitions.CriticalEdge.original_coeff_one_residue' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdge.subcriticalFraction_pos_lt_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OrderedPartitions.CriticalEdge.original_no_zero_of_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdge.original_no_zero_in_disk' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdge.geometric_condition_of_log' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdge.original_no_zero_in_disk_of_log' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OrderedPartitions.CriticalEdge.eventually_original_no_zero_in_disk' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OrderedPartitions.CriticalEdge.original_effective_critical_disk' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+replaying OrderedPartitions.CriticalEdgeFiniteZeroFree
+kernel_replay_exit=0 OrderedPartitions.CriticalEdgeFiniteZeroFree source_sha256=b4d553fc2bc8079fcc72567252f58f77eeaf54f38324bdd0b7760dbfcdaa4928 object_sha256=45c91a8483eb0b5022be10d88c0f49e661f581f6ba3a287a0dc1faab34e8553b
+'OrderedPartitions.CriticalEdge.root_distance_log_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.CriticalEdge.original_log_radius' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.CriticalEdgeLogRadius
+kernel_replay_exit=0 OrderedPartitions.CriticalEdgeLogRadius source_sha256=77059cf6d159b5b1c0ebda5bf77b8661199d44fbb8d9d818d71e05ae68827ded object_sha256=6e974d84ce28b5947d3d7d887c32c7e3f77614e48763faeaa93873242d5456c8
+'OrderedPartitions.CriticalEdge.original_inner_radii' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.CriticalEdgeInnerRadii
+kernel_replay_exit=0 OrderedPartitions.CriticalEdgeInnerRadii source_sha256=ead7be3d1ebf8ab43254f8441790c6e7b8df23aad8aedd5bd31dc7b35aec8ea9 object_sha256=61b2482179ff71ca5b6ee763132f378cfe6c4360c43e87af1de7177100679289
+PASS 32 cold project modules, 32 independent kernel replays, 111 source axiom reports and 6 targeted reports
+source_cold_verifier_exit=0
