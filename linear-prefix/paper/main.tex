@@ -1,0 +1,456 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,microtype}
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={A linear fraction of interlacing inner zeros in ordered set partitions},
+            pdfauthor={Bowen Zuo}}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newcommand{\C}{\mathbb C}
+\newcommand{\ee}{\mathrm e}
+\newcommand{\ii}{\mathrm i}
+\newcommand{\dd}{\,\mathrm d}
+\title{A linear fraction of interlacing inner zeros in ordered set partitions}
+\author{Bowen Zuo\\[2pt]\small East China University of Science and Technology}
+\date{27 November 2026}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Fix a block-size threshold $j\ge2$. The polynomial $O_{n,j}(t)$ counts
+ordered partitions of $[n]$ by the number of blocks of size at least $j$.
+For each fixed $H\ge1$, there is a constant $c>0$ such that the first
+$\lfloor cn\rfloor$ zeros in increasing order of complex modulus are
+simple, negative, and real for all sufficiently large $n$. Numbering
+these zeros by distance from zero, we prove
+$t_{n+h,m}>t_{n,m}>t_{n+h,m+1}$ for $1\le h\le H$ and
+$1\le m<\lfloor cn\rfloor$. A two-residue formula on a fixed complex
+neighborhood gives an exponentially accurate phase model. Bounds on
+its transverse derivative exclude complex competitors before the
+positive phase indices are counted.
+\end{abstract}
+
+\section{Ordered partitions and the root order}
+
+An ordered partition of $[n]$ is a sequence of nonempty disjoint sets
+whose union is $[n]$. The empty sequence is the partition of $[0]$.
+For an integer $j\ge2$, define
+\[
+ O_{n,j}(t)=\sum_{\pi}t^{\#\{A\in\pi: |A|\ge j\}},
+ \qquad P_n(t)=O_{n,j}(t)/n!.
+\]
+The threshold $j$ is fixed when using $P_n$. We have
+$\deg O_{n,j}=\lfloor n/j\rfloor$, since one may use any number of disjoint
+$j$-element blocks up to that bound and complete with singleton blocks.
+This also gives positive constant and leading coefficients.
+
+\begin{theorem}\label{thm:main}
+For every integer $j\ge2$ and every integer $H\ge1$, there exist
+$0<c<1/j$ and $N$ such that for all $n\ge N$, the first
+$K_n=\lfloor cn\rfloor$ zeros of $O_{n,j}$ in increasing order of
+modulus among its complex zeros are simple negative real numbers
+$t_{n,1}>\cdots>t_{n,K_n}$ with strictly increasing moduli.
+For all $1\le h\le H$ and $1\le m<K_n$,
+\[
+ t_{n+h,m}>t_{n,m}>t_{n+h,m+1}.
+\]
+In particular any complex zero of modulus at most $|t_{n,m}|$ is one
+of $t_{n,1},\ldots,t_{n,m}$.
+\end{theorem}
+
+Alexandersson asks for real-rootedness and consecutive interlacing
+of these ordered polynomials \cite{symcat}. Full-row results at
+thresholds two and three give all-size windows of three and four rows,
+respectively \cite{two,three}. A companion manuscript treats the
+five-row window at threshold four \cite{four}. Those results concern
+complete root lists at their particular thresholds. Theorem~\ref{thm:main}
+concerns a positive fraction of the roots at every fixed threshold and
+permits any fixed bound on the row gap. For $j\ge4$, the limiting distances
+of the ordered zero set from $0$ and $1$ and a fixed-window sinc limit
+were established in \cite{radii}. The fixed-window limit identifies
+the scale of bounded indices. Here the root indices can grow
+linearly with $n$. Fang's threshold-four theorem concerns unordered
+partitions and uses the exponential generating function for a set
+of blocks \cite{fang}. The sequence of blocks here leads to
+a reciprocal generating function.
+
+\section{Critical points and a global modulus bound}
+
+Let $B_j(z)=\sum_{r\ge j} z^r/r!$. The exponential generating function
+of one block, with its marker, is $\ee^z-1-(1-t)B_j(z)$. The labelled
+sequence construction gives
+\begin{equation}\label{eq:egf}
+ P_n(t)=[z^n]\frac{1}{D(z,1-t)},\qquad
+ D(z,s)=2-\ee^z+s B_j(z).
+\end{equation}
+The product of $p$ one-block generating functions enumerates sequences
+of $p$ blocks with multinomial label distribution. Including the empty
+sequence and summing the geometric series proves \eqref{eq:egf}.
+
+Write $\rho=\log 2$ and $f(x)=(\ee^x-2)/B_j(x)$ for $x>0$. The
+derivative has the sign of
+\[
+ G_j(x)=\frac{2(j-1)! B_j(x)}{x^{j-1}}-(\ee^x-2)
+ =1+\sum_{r\ge1}
+       \left(\frac{2}{\binom{j-1+r}{r}}-1\right)\frac{x^r}{r!}.
+\]
+The nonconstant coefficients are nonpositive, and that of $x^2$ is
+strictly negative. Thus $G_j$ decreases strictly on the positive axis.
+Also $G_j(\rho)>0$. For $j\ge4$, coefficient comparison gives
+$G_j(1)\le G_4(1)=11\ee-30<0$. For $j=3$,
+$(\log 3)^2 G_3(\log 3)=8-4\log 3-3(\log 3)^2<0$. For $j=2$,
+$xG_2(x)=(2-x)\ee^x-2$, positive at $1$ and negative at $2$.
+The unique critical point $a$ is the strict maximum of $f$. It lies
+in $(\rho,1)$ for $j\ge4$, in $(\rho,\log 3)$ for $j=3$, and in
+$(1,2)$ for $j=2$. Put $C=f(a)$ and
+\begin{equation}\label{eq:contact}
+ d_2=D_{zz}(a,C)=\frac{2(j-1)}a,\qquad
+ L=\frac{a^2d_2}{2B_j(a)}>0,\qquad t_0=1-C.
+\end{equation}
+Indeed the critical equation gives $C a^{j-1}/(j-1)!=2$,
+and $D(a,C)=D_z(a,C)=0$. The difference between $D_{zz}$ and $D_z$
+at $a$ is $C a^{j-2}/(j-2)!$. For $j\ge3$, $C\ge f(1)>1$
+since $\sum_{r<j}1/r!>2$, and for $j=2$ the formula $C=2/a$ gives
+$C>1$.
+
+\begin{lemma}\label{lem:disk}
+The only zero of $D(\cdot,C)$ on $|z|\le a$ is $a$, where it has
+multiplicity two. For every $\eta>0$, all zeros $t$ of $O_{n,j}$ satisfy
+$|1-t|>C-\eta$ for sufficiently large $n$.
+\end{lemma}
+
+\begin{proof}
+First suppose $j\ge3$. We use
+\begin{equation}\label{eq:circle}
+ |2-\ee^z|\ge \ee^x-2\quad (|z|=x,\ \rho\le x<\log 3),
+\end{equation}
+with equality only at $z=x$. Write $z=p+\ii v$. If $p\le0$, the
+left side is at least $1>\ee^x-2$. If $0<p<x$, put $\delta=x-p$,
+so that $v^2=\delta(x+p)$. The difference of the squared sides is
+\[
+ 4\ee^p(1-\cos v)-(\ee^x-\ee^p)(\ee^x+\ee^p-4).
+\]
+After division by $\ee^p\delta$, the first term is at least
+$(2-x^2/6)(x+p)$. This follows by truncating the alternating cosine
+series after $v^4/24$. When the second term is positive, its size
+after division is at most
+$(\ee^\delta-1)(\ee^x+\ee^p-4)/\delta$.
+For $x\le1$, the upper bounds for this expression in the cases
+$p\le x/2$ and $p\ge x/2$ are
+\[
+ (\ee-1)(\ee+\sqrt{\ee}-4)<0.64,
+ \qquad 2(\sqrt{\ee}-1)(2\ee-4)<1.88.
+\]
+The first term exceeds $11\rho/6>1.26$ and $11\rho/4>1.89$,
+respectively. If $1\le x<\log3$, the upper bounds are
+\[
+ \frac{2(\sqrt3-1)}{\log3}<1.34,
+ \qquad\frac{4(\sqrt3-1)}{\log3}<2.68,
+\]
+while the first term exceeds $2-(1.1)^2/6>1.79$ and
+$\tfrac32(2-(1.1)^2/6)>2.69$, respectively. These comparisons use
+the increasing function $(\ee^u-1)/u$ for $u>0$ and, for example,
+$2.718<\ee<2.719$, $0.693<\log2$, $1.098<\log3<1.1$,
+$\sqrt{\ee}<1.649$, and $\sqrt3<1.733$. For the exponential
+bounds one can truncate after degree $12$ and bound the positive
+tail by its first term times $(1-x/14)^{-1}$ for $0\le x\le1.1$.
+The case $p=x$ gives
+$z=x$ and equality. This proves \eqref{eq:circle}.
+
+For any $0\le T<C$ and $|s|\le T$, on $|z|=a$ one has
+$|s B_j(z)|<|2-\ee^z|$ and
+$|D(z,s)|\ge b=(C-T)B_j(a)>0$. Rouch\'e's theorem gives exactly one
+zero $p(s)$ in $|z|<a$, counted with multiplicity, because
+$2-\ee^z$ has only the root $\rho$ there. The root is simple and
+nonzero. The derivative satisfies $|D_z(z,s)|\le M=(1+T)\ee^a$
+on the closed disk. Integrating the derivative from $p(s)$ to the
+circle along its radial segment shows $a-|p(s)|\ge b/M$.
+Cauchy's formula with the single residue yields
+\[
+ [z^n]D(z,s)^{-1}=-\frac{p(s)^{-n-1}}{D_z(p(s),s)}+E_n(s),
+ \qquad |E_n(s)|\le a^{-n}/b .
+\]
+The error divided by the magnitude of the residue is at most
+$(Ma/b)(1-b/(Ma))^{n+1}$, uniformly for $|s|\le T$. Hence the coefficient
+is eventually nonzero throughout this closed parameter disk.
+
+For real $0<s<C$, $p(s)$ is the solution of $f(p)=s$ in $(\rho,a)$
+and tends to $a$ as $s\uparrow C$. A zero of $D(\cdot,C)$ strictly inside
+$|z|=a$ would persist in a small interior disk for $s$ close to $C$,
+contradicting the convergence of the unique interior root to $a$.
+On the boundary \eqref{eq:circle} and $|C B_j(z)|\le C B_j(a)$ rule out
+every point except $a$. Its multiplicity is two by \eqref{eq:contact}.
+
+For $j=2$, $D(z,s)=(s-1)\ee^z-sz+2-s$. At $s=C$ this becomes
+$C(\ee^{z-a}-1-(z-a))$. If $w=z-a$, the latter expression divided by
+$Cw^2$ continues to
+$\int_0^1(1-u)\ee^{uw}\dd u$. After multiplying by
+$\ee^{-\ii\operatorname{Im}(w)/2}$, this integral has strictly
+positive real part when $|\operatorname{Im} w|<\pi$. In particular
+there is no zero apart from the double zero $a$ on $|z|\le a<2$.
+
+The published threshold-two theorem gives only negative real zeros
+for its nonconstant rows \cite{two}. Accordingly, for the translated
+distance bound at $j=2$ it suffices to exclude $1\le s\le T<C$.
+For each such $s$ there is a simple positive root $p(s)\in[1,a)$
+on the increasing branch of $f$, with $p(1)=1$ and $D_z(p(s),s)<0$.
+For $s>1$ a nonreal zero $x+\ii v$ with $x\le p(s)$ would require
+$(s-1)\ee^x\sin(v)/v=s$, impossible since
+$(s-1)\ee^{p(s)}<s$. The function $D(x,s)$ is strictly decreasing for
+$x\le p(s)$, so this half-plane has no other real zero. For $s=1$
+the denominator is $1-z$. At each $s_*$ in the compact interval
+$[1,T]$ choose a circle of radius $R_*>p(s_*)$ containing just this
+pole. In a neighborhood of $s_*$, continuity of $p(s)$ and
+Rouch\'e's theorem keep the pole inside, with $p(s)/R_*$ bounded
+strictly below $1$ and a positive lower bound for $|D|$ on the circle.
+The same residue comparison on each of finitely many neighborhoods
+gives eventual nonvanishing on $[1,T]$. Taking $T=C-\eta$, when it
+is at least $1$, proves the distance assertion. For the other
+values of $\eta$ it follows from negativity of the roots.
+\end{proof}
+
+\section{A uniform two-residue formula}
+
+Choose $R>a$ such that $D(\cdot,C)$ has only its double zero $a$ in
+$|z|\le R$. Such a choice follows from Lemma~\ref{lem:disk} and
+isolation of zeros. Near $a$, extend $f(z)=(\ee^z-2)/B_j(z)$
+holomorphically. We have $f(a)=C$, $f'(a)=0$ and
+$f''(a)=-d_2/B_j(a)$. Thus
+\[
+ \frac{C-f(z)}{L} = \frac{(z-a)^2}{a^2}\,(1+O(z-a)).
+\]
+Use the analytic square root of the unit taking value $1$ at $a$.
+The resulting coordinate has derivative $1/a$ there and an analytic
+local inverse $Z(v)$ with $Z(0)=a$, $Z'(0)=a$. The inverse is real
+under conjugation by uniqueness. For $s(v)=C-Lv^2$, the two poles
+are $Z(v)$ and $Z(-v)$. They are distinct and simple for $v\ne0$,
+since the equation in the coordinate is $w^2=v^2$ and its derivative
+at $w=\pm v$ is nonzero. Shrink the disk of $v$ if necessary.
+Rouch\'e's theorem on $|z|=R$ gives exactly two zeros with
+multiplicity throughout this disk. Both have already been accounted
+for by this local description.
+
+Define the pole half-logarithm and its geometric mean by
+\[
+ W(v)=\frac{\log Z(v)-\log Z(-v)}2,\qquad
+ g(v)=\exp\!\left(\frac{\log Z(v)+\log Z(-v)}2\right).
+\]
+The logarithms are germs at the positive value $a$. Thus
+$Z(\pm v)=g(v)\exp(\pm W(v))$. The function $W$ is odd and
+$W'(0)=1$, and $g$ is even with $g(0)=a$.
+The continued residue amplitude
+\[
+ A(v)=\frac{v}{D_z(Z(v),s(v))}
+\]
+is analytic near zero, with $A(0)=1/(a d_2)>0$. This follows by
+differentiating the denominator along the branch at $v=0$ and
+using $s'(0)=0$. On a sufficiently small disk use the logarithms
+at this positive value to put
+\[
+ U(v)=\exp\!\left(\frac{\log A(v)+\log A(-v)}2\right),\qquad
+ b(v)=\frac{\log A(-v)-\log A(v)}2.
+\]
+Then $A(v)=U(v)\ee^{-b(v)}$, $A(-v)=U(v)\ee^{b(v)}$,
+and $b$ is odd. All these analytic functions respect conjugation.
+
+Let $t(v)=t_0+Lv^2$ and $\lambda_n(v)=(n+1)W(v)+b(v)$.
+For $v\ne0$, the exact coefficient formula obtained from \eqref{eq:egf}
+by the residue theorem \cite[Chap.~IV]{fs} is
+\[
+ P_n(t(v))=E_n(v)
+ -\frac{1}{D_z(Z(v),s(v))Z(v)^{n+1}}
+ -\frac{1}{D_z(Z(-v),s(v))Z(-v)^{n+1}},
+\]
+where
+\[
+ E_n(v)=\frac1{2\pi\ii}\int_{|z|=R}\frac{z^{-n-1}}{D(z,s(v))}\dd z .
+\]
+Multiplication by $v g(v)^{n+1}/(2U(v))$ gives
+\begin{equation}\label{eq:wave}
+ Q_n(v):=\frac{v g(v)^{n+1}}{2U(v)}P_n(t(v))
+      =\sinh\lambda_n(v)+\mathcal E_n(v),\qquad
+ \mathcal E_n(v)=\frac{v g(v)^{n+1}}{2U(v)}E_n(v).
+\end{equation}
+The pole at $Z(v)$ contributes $-\ee^{-\lambda_n(v)}/2$.
+The pole at $Z(-v)$ contributes $\ee^{\lambda_n(v)}/2$ because its
+amplitude includes the factor $-v$. The formula extends to the center.
+
+There are a fixed $r>0$, $0<q<1$, and $K>0$ such that
+\begin{equation}\label{eq:exp}
+ |\mathcal E_n(v)|\le K|v|q^n\quad(|v|\le2r),\qquad
+ |\mathcal E_n'(v)|\le 2Kq^n\quad(|v|\le r).
+\end{equation}
+Indeed $|D|$ on the outer circle has a uniform positive lower bound
+on a small closed disk of $v$. Thus $|E_n(v)|\le K_0 R^{-n}$.
+In that disk $|g(v)|$ is uniformly less than $R$ and $|U(v)|$
+is bounded away from zero. This gives the first bound. The
+error is analytic by $\mathcal E_n=Q_n-\sinh\lambda_n$, and
+Cauchy's derivative estimate on the circle of radius $r$ centered
+at $v$ gives the second bound. As $Q_n$ and $\lambda_n$ are odd
+and respect conjugation, so does $\mathcal E_n$.
+
+\section{Reality, simplicity, and phase indices}
+
+Shrink $r$ further so that $|W'(v)-1|\le1/4$ for $|v|\le r$.
+On the same disk let $|b'(v)|\le M$. If $v=x+\ii y$ and
+$|v|\le r$, the horizontal segment from $\ii y$ to $v$ stays
+in this disk. Oddness and conjugation imply that
+$W(\ii y)$, $b(\ii y)$ and $\mathcal E_n(\ii y)$ are purely imaginary.
+Integrating along the segment gives
+\begin{align}
+ |\operatorname{Re}\lambda_n(v)|
+  &\ge\bigl(\tfrac34(n+1)-M\bigr)|x|,\\
+ |\operatorname{Re}\mathcal E_n(v)|&\le 2Kq^n |x|.\label{eq:transverse}
+\end{align}
+Suppose $P_n(t(v))=0$. Then $\sinh\lambda_n(v)=-\mathcal E_n(v)$.
+Writing $\lambda_n(v)=X+\ii Y$, the identity
+$|\sinh(X+\ii Y)|^2=\sinh^2 X+\sin^2 Y$ implies
+$|\sin Y|\le Kr q^n$ and hence $|\cos Y|\ge1/2$ eventually.
+Since $\operatorname{Re}\sinh(X+\ii Y)=\sinh X\cos Y$ and
+$|\sinh X|\ge|X|$, the two preceding inequalities force $x=0$ for all
+large $n$. This applies to every complex zero represented in the
+fixed splitting disk.
+
+For real $y\in[0,r]$, write
+\[
+ \omega(y)=\operatorname{Im} W(\ii y),\quad
+ \phi_n(y)=\operatorname{Im}\lambda_n(\ii y),\quad
+ e_n(y)=\operatorname{Im}\mathcal E_n(\ii y).
+\]
+The imaginary part of $Q_n(\ii y)$ is then
+$\sin\phi_n(y)+e_n(y)$, and its real part is zero. The normalization
+in \eqref{eq:wave} is nonzero when $y>0$. Therefore a zero of this
+real wave there corresponds exactly to a zero of $P_n$ at
+$t_0-Ly^2$. A polynomial root with vanishing derivative would give
+a wave root with vanishing derivative by the product and chain rules.
+Hence a simple wave zero gives a simple polynomial zero.
+At $y=0$ the wave derivative is $\phi_n'(0)+e_n'(0)>0$ eventually.
+If $P_n(t_0)=0$, the factor $v$ in \eqref{eq:wave} would make the
+wave derivative zero at the center. The central zero belongs only
+to the normalization.
+
+The bounds above give, for all large $n$ and $0\le y\le r$,
+\begin{gather}
+ \phi_n(0)=0,\qquad
+ \frac n2\le\phi_n'(y)\le2n,\qquad
+ \frac34 y\le\omega(y)\le\frac54 y,\label{eq:growth}\\
+ |e_n(y)|\le Kyq^n,\qquad |e_n'(y)|\le 2K q^n,\qquad
+ \phi_{n+h}(y)-\phi_n(y)=h\omega(y).\label{eq:diff}
+\end{gather}
+Fix $0<d<r$. If the phase interval
+$[m\pi-\pi/4,m\pi+\pi/4]$ is contained in
+$[0,\phi_n(d)]$ for $m\ge1$, its inverse image is a single interval.
+At its endpoints the sine has opposite signs, of magnitude
+$1/\sqrt2$, and the error is smaller. On this interval the derivative
+of $(-1)^m(\sin\phi_n+e_n)$ is at least
+$\phi_n'/\sqrt2-|e_n'|>0$. There is a unique zero $y_{n,m}$ there
+and its derivative is nonzero.
+
+Conversely, at any positive wave zero with $y\le d$, let $m\pi$
+be a nearest multiple of $\pi$ to $\phi_n(y)$. For
+$|s|\le\pi/2$, $|\sin s|\ge2|s|/\pi$, whence
+\begin{equation}\label{eq:resid}
+ |\phi_n(y)-m\pi|\le(\pi/2)K y q^n.
+\end{equation}
+The right side is less than $\pi/4$ eventually. The case $m=0$
+would contradict $\phi_n(y)\ge ny/2$. Thus every positive wave
+zero has a positive index, including any zero in a partial
+phase cell at the upper end.
+
+\section{Global ranking and bounded gaps}
+
+Put $r_0=C-1>0$, so $t_0=-r_0$. For any complex $t$ one has
+\begin{equation}\label{eq:tangent}
+ |t+r_0|^2=(1+r_0)|t|^2+r_0(1+r_0)-r_0|1-t|^2 .
+\end{equation}
+Given $0<\delta\le1$, the hypotheses
+$|t|\le r_0+\delta$ and $|1-t|\ge C-\delta$ therefore imply
+$|t-t_0|^2\le(1+r_0)(4r_0+1)\delta$.
+By Lemma~\ref{lem:disk} the latter lower bound on $|1-t|$ holds
+eventually for every complex zero. Fix $b_0\in(0,r)$ and choose
+a sufficiently small positive $\delta$ so that the displayed
+upper bound is strictly below $L^2 b_0^4$. For every zero
+with $|t|\le r_0+\delta$, choose either square root
+$v$ of $(t-t_0)/L$. It has $|v|<b_0$. By transverse exclusion it is
+purely imaginary. The center is excluded, so this zero is
+$t_0-Ly^2$ for some $y\in(0,b_0)$ that is a real wave zero.
+
+Now reduce $d$ so that $0<d<b_0$, $Ld^2\le\delta$, and
+$(5/4)Hd<\pi/2$. Choose
+$0<c<\min(1/j,d/(4\pi))$. For all sufficiently large $n$,
+the complete cells for $1\le m\le K_n=\lfloor cn\rfloor$
+fit in $[0,\phi_n(d)]$ by \eqref{eq:growth}. Their roots yield the
+simple negative roots $t_{n,m}=t_0-Ly_{n,m}^2$. Their moduli increase
+strictly with $m$. If a complex zero has modulus at most
+$|t_{n,m}|$, it lies within $r_0+\delta$ and hence is represented
+by a positive wave zero. Its modulus is $r_0+Ly^2$, so
+$y\le y_{n,m}<d$. Its positive index is at most $m$ by the
+order of the phase cells. Uniqueness in those complete cells
+proves the exhaustiveness asserted in Theorem~\ref{thm:main}.
+
+Finally fix $1\le h\le H$ and $1\le m<K_n$. The indices $m$ and
+$m+1$ are available in row $n+h$ since $K_{n+h}\ge K_n$.
+At $y=y_{n,m}$, \eqref{eq:growth} and the cell location give
+$y\ge 3\pi/(8n)$. The phase increment thus satisfies
+\[
+ \frac{9\pi}{32n}\le h\omega(y)<\frac{\pi}{2}.
+\]
+The phase errors in \eqref{eq:resid} for the three roots being
+compared are bounded by $Aq^n$ with $A=\pi Kd/2$.
+As $nq^n\to0$, the increment eventually lies strictly between
+$2Aq^n$ and $\pi-2Aq^n$. Using the exact phase change in
+\eqref{eq:diff} gives
+\[
+ \phi_{n+h}(y_{n+h,m})<\phi_{n+h}(y_{n,m})
+ <\phi_{n+h}(y_{n+h,m+1}).
+\]
+The phase is strictly increasing, and the marker $t_0-Ly^2$
+is strictly decreasing for positive $y$. This proves the stated
+interlacing simultaneously for all the indicated indices and gaps.
+
+For a fixed $m$, \eqref{eq:growth} and \eqref{eq:resid} give
+$y_{n,m}=O_m(n^{-1})$ and $ny_{n,m}\to m\pi$, using
+$\omega(y)=y+o(y)$ and $b(\ii y)=O(y)$. Thus
+$n^2(t_0-t_{n,m})\to L(m\pi)^2$. The index of the limiting
+sinc zero agrees with this modulus order.
+
+\paragraph{Formal verification.}
+The Lean theorem \texttt{original\_linear\_prefix} formalizes
+Theorem~\ref{thm:main} for the original labelled row, with $j=k+2$.
+The verification record identifies the source revision and kernel checks.
+
+\paragraph{Acknowledgment.}
+ChatGPT assisted with mathematical derivation, independent checks,
+formalization, and drafting.
+
+\begingroup
+\small
+\raggedright
+\begin{thebibliography}{9}
+\bibitem{symcat}
+P.~Alexandersson, \emph{Real-rooted polynomials: open problems},
+SymCat, ordered set partitions in \emph{Set partitions and trees},
+\href{https://www.symmetricfunctions.com/realRootedOpenProblems.htm\#set-partitions-and-trees}{catalog entry},
+accessed 27 November 2026.
+\bibitem{fang}
+C.~Fang, \emph{Eventual interlacing of large-block set-partition polynomials},
+26 November 2026, \href{https://hexagonmath.org/pdf/2611.01129v1}{hexagon:2611.01129v1}.
+\bibitem{fs}
+P.~Flajolet and R.~Sedgewick, \emph{Analytic Combinatorics},
+Cambridge University Press, 2009.
+\bibitem{two}
+B.~Zuo, \emph{A sharp three-row interlacing window for ordered partitions by nonsingleton blocks},
+2026, \href{https://doi.org/10.5281/zenodo.24571210}{doi:10.5281/zenodo.24571210}.
+\bibitem{three}
+B.~Zuo, \emph{Four interlacing rows of ordered set partitions at threshold three},
+2026, \href{https://doi.org/10.5281/zenodo.24571945}{doi:10.5281/zenodo.24571945}.
+\bibitem{four}
+B.~Zuo, \emph{Five interlacing rows of ordered set partitions at threshold four},
+companion manuscript, 2026.
+\bibitem{radii}
+B.~Zuo, \emph{The nearest complex zeros of ordered set-partition polynomials with a large-block marker},
+2026, \href{https://doi.org/10.5281/zenodo.24573157}{doi:10.5281/zenodo.24573157}.
+\end{thebibliography}
+\endgroup
+\end{document}

@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Please cite this work when using its formal proof or verification scripts."
+type: software
+version: 1.2.0
+title: "A linear fraction of interlacing inner zeros in ordered set partitions"
+authors:
+  - family-names: Zuo
+    given-names: Bowen
+    affiliation: East China University of Science and Technology
+repository-code: "https://github.com/AlexZander-666/ordered-partition-inner-radii/tree/v1.2.0/linear-prefix"
+license: Apache-2.0
+keywords:
+  - ordered set partitions
+  - complex zeros
+  - polynomial interlacing
+  - Lean 4
