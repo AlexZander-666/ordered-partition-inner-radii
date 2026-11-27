@@ -1,0 +1,5 @@
+# Nearest complex zeros at every block threshold
+
+Fix a threshold j≥2 in the original ordered set-partition polynomial. The main theorem uses k=j−2. It finds a single critical point a between log 2 and 2, sets C=(exp(a)−2)/B_j(a), and proves both nearest-root distance limits (from one and zero) and locally uniform convergence to sinc in the n⁻² marker window. For j=2,3 a signed first-block recurrence gives a strict real barrier at every rank. The previously established complete root arrays put every complex zero below 1−C. A root approaches the barrier to within order n⁻². A half-plane argument isolates the threshold-two double pole. A signed integral representation of the quadratic exponential remainder isolates the threshold-three double pole.
+
+The entry module is OrderedPartitions.CriticalEdgeAllThresholds. From a fresh extraction of the source ZIP run python3 -Bu verify.py /absolute/path/to/locked/Lake/packages 3. The archive includes every locally imported Lean module, the version lock, target list and verifier. This is a private research source snapshot.

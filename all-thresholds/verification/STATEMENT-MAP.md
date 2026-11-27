@@ -1,0 +1,9 @@
+# Original rows and formal statements
+
+For each ordered partition of a labelled n-set, the exponent of the marker t counts blocks of size at least j. Summing the monomials gives the row polynomial. The definition and exponential generating function agree by OriginalEGF. The formal parameter k is j−2. A natural k permits every integer threshold j≥2.
+
+The entry theorem is OrderedPartitions.CriticalEdge.original_all_inner_edges. It takes only k, and gives one real critical point a in (log 2,2) with criticalTest k a=0. Set C=ratio k a>1 and L=edgeWidth k a. The two infima are Euclidean distances in the complex plane to the zeros of the original row. As n grows, the distances from 1 and 0 converge to C and C−1, respectively. Bounds for any individual zero alone would only give one direction of these statements. The matching direction uses an actual real zero near the critical point.
+
+The same a gives compact-uniform convergence on every fixed centered complex disk in u. The original row is evaluated at t=1−C−Lu/n², divided by n!, and multiplied by aⁿa(j−1)/n. The limit is the entire function with coefficients (−1)ᵐ/(2m+1)!, including its value 1 at zero. For j≥4 two pre-existing statements share a because criticalTest is strictly decreasing on its relevant domain.
+
+At j=2,3 the additional theorem original_small_sharp_barrier places every complex zero of every row on the real interval strictly below 1−C. For all sufficiently large n an actual zero approaches this endpoint within L(3π/2)²/n². Eventual existence handles constant rows at the smallest indices. The sources distinguish isolation of the threshold-two exponential pole on a half-plane from isolation of the threshold-three pole on the closed critical disk, which uses the integral quadratic remainder. The all-threshold statement asserts limits and does not establish complete interlacing for every j.

@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Please cite this work when using its formal proof or verification scripts."
+type: software
+version: 1.1.0
+title: "The nearest complex zeros of ordered set-partition polynomials with a large-block marker"
+authors:
+  - family-names: Zuo
+    given-names: Bowen
+    affiliation: East China University of Science and Technology
+repository-code: "https://github.com/AlexZander-666/ordered-partition-inner-radii"
+license: Apache-2.0
+keywords:
+  - ordered set partitions
+  - complex zeros
+  - sinc limit
+  - Lean 4
